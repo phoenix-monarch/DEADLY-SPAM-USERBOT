@@ -6,15 +6,14 @@ from os import execl
 from telethon import TelegramClient, events
 from telethon.sessions import StringSession
 from telethon.tl.functions.account import UpdateProfileRequest
-from Config import STRING, SUDO, BIO_MESSAGE, API_ID, API_HASH, STRING2, STRING3, STRING4 ,STRING5, STRING6, STRING7, STRING8 ,STRING9, STRING10, STRING11, STRING12, STRING13, STRING14, STRING15, STRING16, STRING17, STRING18, STRING19, STRING20, STRING21, STRING22, STRING23, STRING24, STRING25, HEROKU_API_KEY, HEROKU_APP_NAME
+from Config import STRING, SUDO, BIO_MESSAGE, API_ID, API_HASH, STRING2, STRING3, STRING4 ,STRING5, STRING6, STRING7, STRING8 ,STRING9, STRING10, STRING11, STRING12 , STRING13 , STRING14 , STRING15 ,STRING16 , STRING17 , STRING18 , STRING19 , STRING20 , STRING21 , STRING22 , STRING23 , STRING24 , STRING25 
 import asyncio
 import telethon.utils
 from telethon.tl import functions
 from telethon.tl.functions.channels import LeaveChannelRequest
 from telethon.tl.functions.messages import ImportChatInviteRequest
+from telethon import events, custom, Button
 from Utils import RAID, RRAID
-import git
-import heroku3
 
 
 a = API_ID
@@ -799,49 +798,7 @@ async def gifspam(e, smex):
         pass
 
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@vkk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@kkk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@lkk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@mkk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@sid.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@shy.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@aan.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@ake.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@eel.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@khu.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@shi.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@yaa.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@dav.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@raj.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@put.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 
-async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗼\n\nCommand:\n\n.bio <Message to set Bio of Userbot accounts>"
-    if e.sender_id in SMEX_USERS:
-        yukki = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)     
-        if len(e.text) > 5:
-            bio = str(yukki[0])
-            text = "Changing Bio"
-            event = await e.reply(text, parse_mode=None, link_preview=None )
-            try:
-                await e.client(functions.account.UpdateProfileRequest(about=bio))
-                await event.edit("Succesfully Changed Bio By MULTI SPAMBOT")
-            except Exception as e:
-                await event.edit(str(e))   
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None )
-            
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
@@ -954,13 +911,12 @@ async def _(e):
 @dav.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @raj.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @put.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
     if e.sender_id in SMEX_USERS:
-        ustad = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        yukki = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 7:
-            bc = ustad[0]
+            bc = yukki[0]
             bc = int(bc)
             text = "Leaving....."
             event = await e.reply(text, parse_mode=None, link_preview=None )
@@ -1288,69 +1244,6 @@ async def spam(e):
             await e.reply(usage, parse_mode=None, link_preview=None )
 
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@vkk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@kkk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@lkk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@mkk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@sid.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@shy.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@aan.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@ake.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@eel.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@khu.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@shi.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@yaa.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@dav.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@raj.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@put.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-
-async def spam(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
-    if e.sender_id in SMEX_USERS:
-        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
-            return await e.reply(usage, parse_mode=None, link_preview=None )
-        yukki = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-        smex = await e.get_reply_message()
-        if len(yukki) == 2:
-            message = str(yukki[1])
-            print(message)
-            a = await e.client.get_entity(message)
-            g = a.id
-            c = a.first_name
-            username = f"[{c}](tg://user?id={g})"
-            counter = int(yukki[0])
-            for _ in range(counter):
-                reply = random.choice(RAID)
-                caption = f"{username} {reply}"
-                async with e.client.action(e.chat_id, "typing"):
-                    await e.client.send_message(e.chat_id, caption)
-                    await asyncio.sleep(0.3)
-        elif e.reply_to_msg_id:             
-            a = await e.get_reply_message()
-            b = await e.client.get_entity(a.sender_id)
-            g = b.id
-            c = b.first_name
-            counter = int(yukki[0])
-            username = f"[{c}](tg://user?id={g})"
-            for _ in range(counter):
-                reply = random.choice(RAID)
-                caption = f"{username} {reply}"
-                async with e.client.action(e.chat_id, "typing"):
-                    await e.client.send_message(e.chat_id, caption)
-                    await asyncio.sleep(0.3)
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None )
-
 
 
 
@@ -1555,136 +1448,7 @@ async def ping(e):
 
     
         
-# INVITE ALL OP
-
-from telethon.errors import (
-    ChannelInvalidError,
-    ChannelPrivateError,
-    ChannelPublicGroupNaError,
-)
-from telethon.tl import functions
-from telethon.tl.functions.channels import GetFullChannelRequest
-from telethon.tl.functions.messages import GetFullChatRequest
-
-
-async def get_chatinfo(event):
-    chat = event.pattern_match.group(1)
-    chat_info = None
-    if chat:
-        try:
-            chat = int(chat)
-        except ValueError:
-            pass
-    if not chat:
-        if event.reply_to_msg_id:
-            replied_msg = await event.get_reply_message()
-            if replied_msg.fwd_from and replied_msg.fwd_from.channel_id is not None:
-                chat = replied_msg.fwd_from.channel_id
-        else:
-            chat = event.chat_id
-    try:
-        chat_info = await event.client(GetFullChatRequest(chat))
-    except:
-        try:
-            chat_info = await event.client(GetFullChannelRequest(chat))
-        except ChannelInvalidError:
-            await event.reply("`Invalid channel/group`")
-            return None
-        except ChannelPrivateError:
-            await event.reply(
-                "`This is a private channel/group or I am banned from there`"
-            )
-            return None
-        except ChannelPublicGroupNaError:
-            await event.reply("`Channel or supergroup doesn't exist`")
-            return None
-        except (TypeError, ValueError):
-            await event.reply("`Invalid channel/group`")
-            return None
-    return chat_info
-
-
-def make_mention(user):
-    if user.username:
-        return f"@{user.username}"
-    else:
-        return inline_mention(user)
-
-
-def inline_mention(user):
-    full_name = user_full_name(user) or "No Name"
-    return f"[{full_name}](tg://user?id={user.id})"
-
-
-def user_full_name(user):
-    names = [user.first_name, user.last_name]
-    names = [i for i in list(names) if i]
-    full_name = " ".join(names)
-    return full_name
-
-
-            
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall")) 
-@vkk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall")) 
-@kkk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall")) 
-@lkk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall")) 
-@mkk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall")) 
-@sid.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@shy.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@aan.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@ake.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@eel.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@khu.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@shi.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@yaa.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@dav.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@raj.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@put.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-
-async def get_users(event):
-    if event.sender_id in SMEX_USERS:
-        rkp = await event.reply("`processing...`")
-    else:
-        rkp = await event.edit("`processing...`")
-    rk1 = await get_chatinfo(event)
-    chat = await event.get_chat()
-    if event.is_private:
-        return await rkp.edit("`Sorry, Can add users here`")
-    s = 0
-    f = 0
-    error = "None"
-
-    await rkp.edit("**TerminalStatus**\n\n`Collecting Users.......`")
-    async for user in event.client.iter_participants(rk1.full_chat.id):
-        try:
-            if error.startswith("Too"):
-                return await rkp.edit(
-                    f"**Terminal Finished With Error**\n(`May Got Limit Error from telethon Please try agin Later`)\n**Error** : \n`{error}`\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people"
-                )
-            await event.client(
-                functions.channels.InviteToChannelRequest(channel=chat, users=[user.id])
-            )
-            s = s + 1
-            await rkp.edit(
-                f"**Terminal Running...**\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people\n\n**× LastError:** `{error}`"
-            )
-        except Exception as e:
-            error = str(e)
-            f = f + 1
-    return await rkp.edit(
-        f"**Terminal Finished** \n\n• Successfully Invited `{s}` people \n• failed to invite `{f}` people"
-    )        
-
-# _______
+        
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
