@@ -1,0 +1,7 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+Glad.session
+Glad.session-journal
+
+# Environments
+.env
