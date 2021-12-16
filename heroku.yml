@@ -1,5 +1,0 @@
-build:
-  docker:
-    glad: Dockerfile
-run:
-  glad: python3 -m sameer.py
