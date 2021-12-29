@@ -1,5 +1,5 @@
 build:
   docker:
-    Riz: Dockerfile
+    DEADLY: Dockerfile
 run:
-  Riz: python3 -m DeadlyOp
+  DEADLY: python3 -m DeadlyOp
