@@ -1,5 +1,0 @@
-build:
-  docker:
-    DEADLY: Dockerfile
-run:
-  DEADLY: python3 -m DeadlyOp
