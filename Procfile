@@ -1,1 +1,0 @@
-DEADLY: python -m DeadlyOp
