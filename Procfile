@@ -1,1 +1,1 @@
-Riz: python -m DeadlyOp
+DEADLY: python -m DeadlyOp
