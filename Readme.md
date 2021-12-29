@@ -28,12 +28,12 @@
 
 -------------------------------------------------
 
-## 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 -[𝚂𝙰𝙼𝙴𝙴𝚁](https://t.me/SAMEER_795)
+## 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 -[𝚂𝙰𝙼𝙴𝙴𝚁](https://t.me/OFFICIAL_SAMEER)
 
 -------------------------------------------------
 
 ## 🚀 Deploy on Heroku 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/sameerpanthi/DEADLY-SPAM-BOT.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/OFFICIAL-SAMEER/JAANAALAWDE.git)
 ------------------------------------------------
 
 
