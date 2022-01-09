@@ -1495,7 +1495,7 @@ async def get_chatinfo(event):
         except (TypeError, ValueError):
             await event.reply("`Invalid channel/group`")
             return None
-    return chat_info      
+    return chat_info            
     
             
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
