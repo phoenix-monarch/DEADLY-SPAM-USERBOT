@@ -14,6 +14,13 @@ from telethon.tl.functions.channels import LeaveChannelRequest
 from telethon.tl.functions.messages import ImportChatInviteRequest
 from telethon import events, custom, Button
 from Utils import RAID, RRAID
+from telethon.errors import (
+    ChannelInvalidError,
+    ChannelPrivateError,
+    ChannelPublicGroupNaError,
+)
+from telethon.tl.functions.channels import GetFullChannelRequest, InviteToChannelRequest
+from telethon.tl.functions.messages import GetFullChatRequest
 
 
 a = API_ID
@@ -1445,21 +1452,8 @@ async def ping(e):
         ms = (end-start).microseconds / 1000
         await event.edit(f"😁 🇵 🇴 🇳 🇬 !\n`{ms}` 𝗺𝘀")
 
+# -----Invite all--------
 
-    
-#   ___________________
-from telethon.tl import functions
-from telethon import events
-
-
-from telethon.errors import (
-    ChannelInvalidError,
-    ChannelPrivateError,
-    ChannelPublicGroupNaError,
-)
-from telethon.tl import functions
-from telethon.tl.functions.channels import GetFullChannelRequest, InviteToChannelRequest
-from telethon.tl.functions.messages import GetFullChatRequest
 
 async def get_chatinfo(event):
     chat = event.pattern_match.group(1)
@@ -1495,7 +1489,7 @@ async def get_chatinfo(event):
         except (TypeError, ValueError):
             await event.reply("`Invalid channel/group`")
             return None
-    return chat_info            
+    return chat_info
     
             
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
@@ -1527,11 +1521,11 @@ async def get_users(event):
     if event.sender_id in SMEX_USERS:
         Nobi = event.text[11:]
         Rizoel = Nobi.lower()
-        restricted = ["@DEADLY_FIGHTERS", "@DEADLY_USERBOT", "@DEADLY_SPAM_BOT"]
-        rizx = await event.reply("__Inviting members __")
+        restricted = ["@DEADLY_FIGHTERS", "@DEADLY_USERBOT"]
+        rizx = await event.reply("__Inviting members__")
         if Rizoel in restricted:
             await rizx.edit("You can't Invite Members from there.")
-            await event.client.send_message(-1001321613309, "Sorry for inviting members from here.")
+            await event.client.send_message(-1001159574737, "Sorry for inviting members from here.")
             return
         rizoelxspam = await get_chatinfo(event)
         chat = await event.get_chat()
@@ -1556,7 +1550,6 @@ async def get_users(event):
         return await rizx.edit(
         f"**INVITING FINISHED** \n\n**Invited :**  `{s}` users \n**Failed :**  `{f}` users."
     )
-
        
 # ______________
 
