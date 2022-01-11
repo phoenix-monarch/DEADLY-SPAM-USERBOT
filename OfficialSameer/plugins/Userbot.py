@@ -145,7 +145,7 @@ DEADLY += f" 𝙳𝙼 / 𝙴𝚌𝚑𝚘 𝙲𝚖𝚍𝚜 \n\n"
 
 DEADLY += f" `.dm` - `.dmraid` - `.dmspam` \n\n `.addecho` - `.rmecho` \n\n"
 
-DEADLY += f"All Cmds Uploaded : [•HERE•](https://t.me/Resourcez/4) \n\n"
+DEADLY += f"All Cmds Uploaded : [•HERE•](https://t.me/DEADLY_SPAMMER/88) \n\n"
                                                          
 DEADLY += f"© @OFFICIAL_SAMEER | @deadly_spam_bot\n"
 
