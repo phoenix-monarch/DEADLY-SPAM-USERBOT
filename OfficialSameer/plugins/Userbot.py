@@ -103,7 +103,7 @@ DEADLY += f"┣➣ **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.9.6`\n"
                            
 DEADLY += f"┣➣ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
 
-DEADLY += f"┣➣ **ᴅᴇᴀᴅʟʏ ᴠᴇʀsɪᴏɴ**  : `{DEADLYversion}`\n"
+DEADLY += f"┣➣ **ᴅᴇᴀᴅʟʏ ᴠᴇʀsɪᴏɴ**  : `{deadlyversion}`\n"
     
 DEADLY += f"┣➣ **sᴜᴘᴘᴏʀᴛ** : [JOIN](https://t.me/DEADLY_SPAM_BOT)\n"
 
