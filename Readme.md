@@ -45,4 +45,4 @@
 
 ## credits 
 
-[yukki bot](https://github.com/YukkiBot/YukkiMultiSpamBot)
+[OP RIZOEL BOT](https://github.com/MrRizoel/RiZoeLXSpam)
