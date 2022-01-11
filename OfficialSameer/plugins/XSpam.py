@@ -133,66 +133,6 @@ async def spam(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
 
-#delayspam
-
-@SAM.on(events.NewMessage(incoming=True, pattern=r"\%sdelayspam" % hl))
-@SAM2.on(events.NewMessage(incoming=True, pattern=r"\%sdelayspam" % hl))
-@SAM3.on(events.NewMessage(incoming=True, pattern=r"\%sdelayspam" % hl))
-@SAM4.on(events.NewMessage(incoming=True, pattern=r"\%sdelayspam" % hl))
-@SAM5.on(events.NewMessage(incoming=True, pattern=r"\%sdelayspam" % hl))
-@SAM6.on(events.NewMessage(incoming=True, pattern=r"\%sdelayspam" % hl))
-@SAM7.on(events.NewMessage(incoming=True, pattern=r"\%sdelayspam" % hl))
-@SAM8.on(events.NewMessage(incoming=True, pattern=r"\%sdelayspam" % hl))
-@SAM9.on(events.NewMessage(incoming=True, pattern=r"\%sdelayspam" % hl))
-@SAM10.on(events.NewMessage(incoming=True, pattern=r"\%sdelayspam" % hl))
-@SAM11.on(events.NewMessage(incoming=True, pattern=r"\%sdelayspam" % hl))
-@SAM12.on(events.NewMessage(incoming=True, pattern=r"\%sdelayspam" % hl))
-@SAM13.on(events.NewMessage(incoming=True, pattern=r"\%sdelayspam" % hl))
-@SAM14.on(events.NewMessage(incoming=True, pattern=r"\%sdelayspam" % hl))
-@SAM15.on(events.NewMessage(incoming=True, pattern=r"\%sdelayspam" % hl))
-@SAM16.on(events.NewMessage(incoming=True, pattern=r"\%sdelayspam" % hl))
-@SAM17.on(events.NewMessage(incoming=True, pattern=r"\%sdelayspam" % hl))
-@SAM18.on(events.NewMessage(incoming=True, pattern=r"\%sdelayspam" % hl))
-@SAM19.on(events.NewMessage(incoming=True, pattern=r"\%sdelayspam" % hl))
-@SAM20.on(events.NewMessage(incoming=True, pattern=r"\%sdelayspam" % hl))
-async def spam(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗹𝗮𝘆𝗦𝗽𝗮𝗺\n\nCommand:\n\n.delayspam <sleep time> <count> <message to spam>\n\n.delayspam <sleep time> <count> <reply to a message>\n\nCount and Sleeptime must be a integer."     
-    if e.sender_id in SUDO_USERS:
-        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
-            return await e.reply(usage, parse_mode=None, link_preview=None)
-        smex = await e.get_reply_message()
-        Deadly = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
-         = Deadly[1:]
-        if len(Deadlysexy) == 2:
-            message = str(Deadlysexy[1])
-            counter = int(Deadlysexy[0])
-            sleeptime = float(Deadly[0])
-            for _ in range(counter):
-                async with e.client.action(e.chat_id, "typing"):
-                    if e.reply_to_msg_id:
-                        await smex.reply(message)
-                    else:
-                        await e.client.send_message(e.chat_id, message)
-                    await asyncio.sleep(sleeptime)
-        elif e.reply_to_msg_id and smex.media:
-            counter = int(Deadlysexy[0])
-            sleeptime = float(Deadly[0])
-            for _ in range(counter):
-                async with e.client.action(e.chat_id, "document"):
-                    smex = await e.client.send_file(e.chat_id, smex, caption=smex.text)
-                    await gifspam(e, smex)
-                await asyncio.sleep(sleeptime)
-        elif e.reply_to_msg_id and smex.text:
-            message = smex.text
-            counter = int(Deadlysexy[0])
-            sleeptime = float(Deadly[0])
-            for _ in range(counter):
-                async with e.client.action(e.chat_id, "typing"):
-                    await e.client.send_message(e.chat_id, message)
-                    await asyncio.sleep(sleeptime)
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None)
-
 #abuse
 
 @SAM.on(events.NewMessage(incoming=True, pattern=r"\%sdmspam" % hl))
