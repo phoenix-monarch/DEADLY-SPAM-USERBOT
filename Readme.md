@@ -46,3 +46,4 @@
 ## credits 
 
 [OP RIZOEL BOT](https://github.com/MrRizoel/RiZoeLXSpam)
+[THE RIZOEL](t.me/TheRiZoeL)
