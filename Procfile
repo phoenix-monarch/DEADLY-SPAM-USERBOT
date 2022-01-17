@@ -1,2 +1,2 @@
 
-worker: python3 LionX.py
+worker: python3 gay.py
