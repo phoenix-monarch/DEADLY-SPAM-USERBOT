@@ -1,2 +1,1 @@
-
-worker: python3 gay.py
+worker: bash setup
