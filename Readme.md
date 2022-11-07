@@ -1,4 +1,4 @@
-# DEADLY SPAMMER
+# DEADLY USERBOT
 
 <p align="center">
   <img src="https://telegra.ph/file/b8e3d5d94082a37b61d8a.jpg">
@@ -45,5 +45,3 @@
 
 ## credits 
 
-[OP RIZOEL BOT](https://github.com/MrRizoel/RiZoeLXSpam)
-AND [THE RIZOEL](t.me/TheRiZoeL)
