@@ -29,8 +29,3 @@ async def leave(client: Client, message: Message):
     except Exception as ex:
         await message.reply_text(f"**ERROR:** \n\n{str(ex)}")
 
-joinhelp = """
-
-!join @username or https://t.me/abc
-!leave @username or https://t.me/abc
-"""
