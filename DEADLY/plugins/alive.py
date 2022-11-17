@@ -1,5 +1,17 @@
-from pyrogram import filters, Client
-from pyrogram.types import *
+import os
+import sys
+import asyncio
+from time import time
+from datetime import datetime
+from pyrogram import filters
+from sys import version_info
+from pyrogram import Client
+from pyrogram.types import Message
+from pyrogram import __version__ as pversion
+
+
+pthversion = f"{version_info[0]}.{version_info[1]}.{version_info[2]}"
+
 
 
 ALIVE_TXT = f"𝐃𝐄𝐀𝐃𝐋𝐘𝐒𝐏𝐀𝐌-𝐔𝐒𝐄𝐑𝐁𝐎𝐓 🇮🇳\n"
