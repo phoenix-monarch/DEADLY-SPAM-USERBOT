@@ -127,7 +127,7 @@ RAID = [
     "TERI ᴍ𝗔𝗔Kᴏ KHULE 𝗕𝗔J𝗔R ᴍE 𝗖HᴏD D𝗔L𝗔 🤣🤣💋",
 ]
 
-DEADLYSPAM = [936481432, 5256676062, 136817688]
+DEV = [936481432, 5256676062, 136817688]
 
 REPLYRAID = [
     "ᴍ𝗔D𝗔R𝗖HᴏD",
@@ -305,10 +305,10 @@ REPLYRAID = [
 ]
 
 
-GROUP = [-1001321613309, -1001749467927, -1001159574737]
+PROGROUPS = [-1001321613309, -1001749467927, -1001159574737]
 
 
-PORMS = [
+PORN = [
         "https://telegra.ph/file/9bcc076fd81dfe3feb291.mp4",
         "https://telegra.ph/file/b7a1a42429a65f64e67af.mp4",
         "https://telegra.ph/file/dc3da5a3eb77ae20fa21d.mp4",
