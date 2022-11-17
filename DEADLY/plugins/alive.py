@@ -32,5 +32,10 @@ async def alive(client, m: Message):
     delta_ping = time() - start
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))   
+ 
+ if int(message.chat.id) in PROGROUPS:
+    await m.reply_text("Sorry U Cannot Use Alive Here") 
+    return
+
     await m.delete() 
     await m.reply_photo(photo=ALIVE_PIC, caption=ALIVE_TXT) 
