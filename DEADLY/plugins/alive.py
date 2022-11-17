@@ -13,7 +13,7 @@ ALIVE_TXT += f"🔹 𝗼𝘄𝗻𝗲𝗿: @{username}\n\n"
 ALIVE_TXT += f"════════════════════\n"
 ALIVE_TXT += f"🔸[𝘀𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/Deadly_spam_bot) [𝗰𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/Deadly_spambot)\n"
 
-@Client.on_message(filters.user(SUDOER) & filters.command(["alive", "on", "start"], [".", "!", "/", ",", "+", "?"]))
+@Client.on_message(filters.user(SUDOERS) & filters.command(["alive", "on", "start"], [".", "!", "/", ",", "+", "?"]))
 async def alive(client, m: Message):
     start = time()
     current_time = datetime.utcnow()
