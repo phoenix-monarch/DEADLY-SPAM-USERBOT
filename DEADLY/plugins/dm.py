@@ -26,9 +26,3 @@ async def dmm(client: Client, message: Message):
         await blaze.edit("Message Sended Successfully ✅")
         await asyncio.sleep(0.15)
 
-dmhelp = """
-
-!dm @username yourmesz 
-
-
-"""
