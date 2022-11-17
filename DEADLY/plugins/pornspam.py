@@ -5,7 +5,7 @@ import time
 from pyrogram.types import Message
 from pyrogram.errors import FloodWait
 from pyrogram import filters, Client
-from resources.data import PORN
+from resources.data import PORN, PROGROUPS
 
 
 @Client.on_message(filters.user(SUDOERS) & filters.command(["pornspam", "pspam"], [".", "!", "/"]))
