@@ -1,3 +1,4 @@
+from pyrogram.errors import FloodWait
 from pyrogram import filters, Client
 from pyrogram.types import *
 from DEADLY import *
@@ -58,18 +59,20 @@ async def dmm(client: Client, message: Message):
        return
  
     if message.reply_to_message:
-        reply_to_id = message.reply_to_message.message_id
-        spam_text = random.choice(RAID) 
+        reply_to_id = message.reply_to_message.message_id        
         for _ in range(quantity):
-            await blaze.edit("**Inbox Sent Successfully 🌚**")
-            await client.send_message(user.id, spam_text,
+            try:
+                spam_text = random.choice(RAID) 
+                await client.send_message(user.id, spam_text,
                                       reply_to_message_id=reply_to_id)
-            await asyncio.sleep(0.15)
+            except FloodWait as e:
+                await asyncio.sleep(e.x) 
         return
 
     for _ in range(quantity):
-        spam_text = random.choice(RAID) 
-        await client.send_message(user.id, spam_text)
-        await blaze.edit("Message Delivered Successfully ✅")
-        await asyncio.sleep(0.15)
+        try:
+            spam_text = random.choice(RAID) 
+            await client.send_message(user.id, spam_text)
+        except FloodWait as e:
+            await asyncio.sleep(e.x)
 
