@@ -10,6 +10,7 @@ from pyrogram.types import Message
 from pyrogram import __version__ as pversion
 from resources.data import PROGROUPS, DEV
 From .import *
+from DEADLY import ALIVE_PIC,  SUDOERS
 
 pthversion = f"{version_info[0]}.{version_info[1]}.{version_info[2]}"
 
@@ -21,8 +22,7 @@ ALIVE_TXT += f"🔹 **𝚃𝙷𝙸𝚂 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙸𝚂 100
 ALIVE_TXT += f"════════════════════\n"
 ALIVE_TXT += f"🔸𝗽𝘆𝗿𝗼𝗴𝗿𝗮𝗺 𝘃𝗲𝗿𝘀𝗶𝗼𝗻: {pversion}\n"
 ALIVE_TXT += f"🔹 𝗽𝘆𝘁𝗵𝗼𝗻 𝘃𝗲𝗿𝘀𝗶𝗼𝗻: {pthversion}\n"
-ALIVE_TXT += f"🔸𝘂𝗽𝘁𝗶𝗺𝗲 {uptime} 𝗽𝗶𝗻𝗴 {delta_ping * 1000:.3f}ᴍs\n"
-ALIVE_TXT += f"🔹 𝗼𝘄𝗻𝗲𝗿: @{username}\n\n"
+ALIVE_TXT += f"🔸𝘂𝗽𝘁𝗶𝗺𝗲 {uptime} 𝗽𝗶𝗻𝗴 {delta_ping * 1000:.3f}ᴍs\n\n"
 ALIVE_TXT += f"════════════════════\n"
 ALIVE_TXT += f"🔸[𝘀𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/Deadly_spam_bot) [𝗰𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/Deadly_spambot)\n"
 
