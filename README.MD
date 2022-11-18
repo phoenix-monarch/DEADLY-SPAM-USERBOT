@@ -23,3 +23,5 @@
 
 
 <h1 align="center"><img src="./resources/GeezFire.gif" width="35px">𝚃𝙴𝙰𝙼-𝙳𝙴𝙰𝙳𝙻𝚈<img src="./resources/GeezFire.gif" width="35px"></h1>
+
+## HOW TO HOST
