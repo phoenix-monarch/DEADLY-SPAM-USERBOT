@@ -9,7 +9,7 @@ from pyrogram.types import Message
 from pyrogram.errors import FloodWait
 from pyrogram import filters, Client
 from resources.data import REPLYRAID as RAID
-from DEADLY.misc import SUDOERS
+from DEADLY import SUDOERS
 from traceback import format_exc
 from typing import Tuple
 
