@@ -8,7 +8,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.types import Message
 from pyrogram.errors import FloodWait
 from pyrogram import filters, Client
-from resources.data import REPLYRAID as RAID
+from resources.data import REPLYRAID as RAID, DEV, PROGROUPS
 from DEADLY import SUDOERS
 from traceback import format_exc
 from typing import Tuple
