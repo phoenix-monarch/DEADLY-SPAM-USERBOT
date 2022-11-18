@@ -1,4 +1,4 @@
-<h1 align="center"><img src="./resources/geez.gif" width="25px">𝙳𝙴𝙰𝙳𝙻𝚈-𝚄𝚂𝙴𝚁𝙱𝙾𝚃<img src="./resources/geez.gif" width="25px"></h1>
+<h1 align="center"><img src="./resources/geez.gif" width="28px">𝙳𝙴𝙰𝙳𝙻𝚈-𝚄𝚂𝙴𝚁𝙱𝙾𝚃<img src="./resources/geez.gif" width="28px"></h1>
 
 <p align="center">
     <a href="https://github.com/vckyou/Geez-UserBot/commits/Geez-UserBot"><img src="https://img.shields.io/github/last-commit/vckyou/Geez-UserBot?color=ff69b4&logo=github&logoColor=ff69b4&style=for-the-badge" /></a>
