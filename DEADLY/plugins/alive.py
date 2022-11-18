@@ -58,3 +58,15 @@ async def alive(client, m: Message):
     ALIVE_TXT += f"🔸[𝘀𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/Deadly_spam_bot) [𝗰𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/Deadly_spambot)\n" 
     await m.delete() 
     await m.reply_photo(photo=ALIVE_PIC, caption=ALIVE_TXT) 
+
+
+
+@Client.on_message(filters.user(SUDOERS) & filters.command(["ping"], [".", "!", "/", ",", "+", "?"]))
+async def ping(client, m: Message):
+    start = time()
+    current_time = datetime.utcnow()
+    delta_ping = time() - start
+    uptime_sec = (current_time - START_TIME).total_seconds()
+    uptime = await _human_time_duration(int(uptime_sec))   
+    await m.delete() 
+    await m.reply_text(f"🎉 🇵 🇴 🇳 🇬 !\n\n♡︎ `{ms}` 𝗺𝘀 ♡︎")
