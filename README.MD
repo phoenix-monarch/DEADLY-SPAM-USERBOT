@@ -7,6 +7,8 @@
     <a href="https://github.com/Team-Deadly/DEADLY-USERBOT/issues"> <img src="https://img.shields.io/github/issues/Team-Deadly/DEADLY-USERBOT?color=blue&logo=github&style=for-the-badge" /></a>
     <a href="https://github.com/Team-Deadly/DEADLY-USERBOT"> <img src="https://img.shields.io/github/repo-size/Team-Deadly/DEADLY-USERBOT?logo=github&style=for-the-badge" /></a>
     <a href="https://github.com/Team-Deadly/DEADLY-USERBOT/network/members"> <img src="https://img.shields.io/github/forks/Team-Deadly/DEADLY-USERBOT?logo=github&style=for-the-badge" /></a>
+
+
     <a href="https://t.me/DEADLY_SPAM_BOT"><img src="https://img.shields.io/badge/sᴜᴘᴘᴏʀᴛ%20Group-red.svg?style=for-the-badge&logo=Telegram"></a>
     <a href="https://t.me/DEADLY_SPAMBOT"><img src="https://img.shields.io/badge/ᴜᴘᴅᴀᴛᴇ%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
     </p>
