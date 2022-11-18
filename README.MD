@@ -1,4 +1,4 @@
-# ─「 [𝙳𝙴𝙰𝙳𝙻𝚈 ダ 𝚂𝙿𝙰𝙼](https://t.me/Elric_xD)」─
+# ─「 [𝙳𝙴𝙰𝙳𝙻𝚈ダ𝚂𝙿𝙰𝙼](https://t.me/Elric_xD)」─
 
 <p align="center">
   <img src="https://telegra.ph/file/b8e3d5d94082a37b61d8a.jpg">
