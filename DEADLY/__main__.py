@@ -1,3 +1,4 @@
+import config
 import asyncio
 from pyrogram import idle
 from DEADLY import bot1, bot2, bot3, bot4, bot5, bot6, bot7, bot8, bot9, bot10, OWNER_ID
