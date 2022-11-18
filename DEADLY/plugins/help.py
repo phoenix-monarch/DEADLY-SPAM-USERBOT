@@ -8,5 +8,5 @@ from .sudo import SUDOERS
 
 
 @Client.on_message(filters.user(SUDOERS) & filters.command(["help", "cmds"], [".", "!", "/", ",", "+", "?"]))
-async def alive(client, m: Message):
+async def help(client, m: Message):
    await client.reply_text("**go to @deadly_spam_bot for command list**") 
