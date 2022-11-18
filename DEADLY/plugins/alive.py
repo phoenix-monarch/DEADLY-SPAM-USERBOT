@@ -10,7 +10,7 @@ from pyrogram.types import Message
 from pyrogram import __version__ as pversion
 from resources.data import PROGROUPS, DEV
 From .import *
-from DEADLY import ALIVE_PIC,  SUDOERS
+from DEADLY import ALIVE_PIC, SUDOERS
 
 pthversion = f"{version_info[0]}.{version_info[1]}.{version_info[2]}"
 
