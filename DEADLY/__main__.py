@@ -28,7 +28,7 @@ async def main():
                OWNER_ID, 
                "<b> Congrats!! DeadlySpam [3] Started Successfully!</b>", 
            )
-     if bot4:
+    if bot4:
        await bot4.start() 
        await bot4.join_chat("Deadly_spam_bot") 
        await bot4.join_chat("deadly_spambot") 
