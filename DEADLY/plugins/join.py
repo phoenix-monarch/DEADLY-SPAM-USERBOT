@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 from DEADLY import SUDOERS
 
-@Client.on_message(filters.command("join", ".") & filters.me)
+@Client.on_message(filters.user(SUDOERS) & filters.command(["join"], [".", "!", "/"]))
 async def join(client: Client, message: Message):
     blaze = message.text[6:]
     count = 0
@@ -16,7 +16,7 @@ async def join(client: Client, message: Message):
     except Exception as ex:
         await message.reply_text(f"**ERROR:** \n\n{str(ex)}")
 
-@Client.on_message(filters.command("leave", ".") & filters.me)
+@Client.on_message(filters.user(SUDOERS) & filters.command(["leave"], [".", "!", "/"]))
 async def leave(client: Client, message: Message):
     blaze = message.text[6:]
     count = 0
