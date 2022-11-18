@@ -6,7 +6,7 @@ from pyrogram.types import Message
 from pyrogram.errors import FloodWait
 from pyrogram import filters, Client
 from resources.data import PORN, PROGROUPS
-
+from DEADLY import SUDOERS
 
 @Client.on_message(filters.user(SUDOERS) & filters.command(["pornspam", "pspam"], [".", "!", "/"]))
 async def prd(client: Client, message: Message):       
