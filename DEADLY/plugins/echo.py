@@ -1,5 +1,3 @@
-
-
 import asyncio
 import random
 import asyncio
@@ -12,7 +10,7 @@ from pyrogram.errors import FloodWait
 from pyrogram import filters, Client
 from traceback import format_exc
 from typing import Tuple
-
+from .sudo import SUDOERS
 
 ECHO_LIST = []
 
