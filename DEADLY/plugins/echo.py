@@ -38,7 +38,7 @@ async def gban(app: Client, message):
             await blaze.edit("**reply to user for activating echo!**")
             return
     get_user = await app.get_users(user)
-    elif int(get_user.id) in ECHO_LIST:
+    if int(get_user.id) in ECHO_LIST:
         await blaze.edit("echo already activated on this user.")
         return
     ECHO_LIST.append(get_user.id)
