@@ -84,6 +84,10 @@ async def main():
                "<b> Congrats!! DeadlySpam [10] Started Successfully!</b>", 
            )
     await idle()
-    
+
+
+print("Your DeadlySpam Userbot Deployed Successfully 🥳 Please visit @deadly_spam_bot for any help!") 
+
+
 loop = asyncio.get_event_loop()
 loop.run_until_complete(main())
