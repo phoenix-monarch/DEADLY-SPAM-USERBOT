@@ -17,12 +17,12 @@
 
 
 <p align="center">
-   <a href="https://github.com/vckyou/Geez-UserBot"><img src="https://telegra.ph/file/47cdc3d607b1a4f55b830.png" alt="Geez Projects" width=400px></a>
+   <a href="https://github.com/Team-Deadly/DEADLY-USERBOT"><img src="https://telegra.ph/file/47cdc3d607b1a4f55b830.png" alt="Deadly-Userbot" width=400px></a>
    <br>
    <br>
 </p>
 
-<h1 align="center"><img src="./resources/extras/GeezFire.gif" width="35px">Geez-UserBot<img src="./resources/extras/GeezFire.gif" width="35px"></h1>
+<h1 align="center"><img src="./resources/GeezFire.gif" width="35px">Geez-UserBot<img src="./resources/extras/GeezFire.gif" width="35px"></h1>
 
 Pada Dasarnya [Geez-UserBot](https://github.com/Vckyou/Geez-UserBot) adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
 Berbasis [Paperplane](https://github.com/RaphielGang) dan [ProjectBish](https://github.com/adekmaulana/ProjectBish) userbot. Saya membuat repository ini untuk memilih dan menambahkan beberapa modul yang saya butuhkan dengan banyak perubahan, fitur dan modul.
