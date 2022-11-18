@@ -25,3 +25,8 @@
 <h1 align="center"><img src="./resources/GeezFire.gif" width="35px">𝚃𝙴𝙰𝙼-𝙳𝙴𝙰𝙳𝙻𝚈<img src="./resources/GeezFire.gif" width="35px"></h1>
 
 ## HOW TO HOST
+
+𝚈𝚘𝚞 𝙲𝚊𝚗 𝚑𝚘𝚜𝚝 𝚍𝚎𝚊𝚍𝚕𝚢-𝚞𝚜𝚎𝚛𝚋𝚘𝚝 𝚘𝚗 𝚅𝚙𝚜 𝚊𝚜 𝚠𝚎𝚕𝚕 𝚊𝚜 𝚊𝚗𝚢 𝚍𝚎𝚟𝚎𝚕𝚘𝚙𝚖𝚎𝚗𝚝 𝚜𝚒𝚝𝚎 𝚕𝚒𝚔𝚎 𝚑𝚎𝚛𝚘𝚔𝚞 𝙾𝚛 𝚛𝚊𝚒𝚕𝚠𝚊𝚢𝚜. 
+
+
+## DEPLOY TO VPS
