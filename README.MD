@@ -17,7 +17,7 @@
 ----
 
 ## 𝚂𝚃𝙰𝚃𝚄𝚂 𝙾𝙵 𝚃𝙷𝙸𝚂 𝙱𝙾𝚃 
-<p align="left"><a href="https://github.com/Team-Deadly/deadly-userbot/network/members"><img src="https://img.shields.io/github/forks/Team-Deadly/deadly-userbot?label=Forks&logoColor=Black&style=social"></a><p align="left"><a href="https://github.com/Team-Deadly/deadly-userbot/stargazers"><img src="https://img.shields.io/github/stars/Team-Deadly/deadly-userbot?logoColor=Blue&style=social"></a><p align="left"><a href="https://github.com/Team-Deadly/deadly-userbot"></a><p align="left"><a href="https://github.com/Team-Deadly/deadly-userbot?"><img src="https://img.shields.io/github/last-commit/Team-Deadly/deadly-userbot?style=paper"></
+<p align="left"><a href="https://github.com/Team-Deadly/deadly-userbot/network/members"><img src="https://img.shields.io/github/forks/Team-Deadly/deadly-userbot?label=Forks&logoColor=Black&style=social"></a><p align="left"><a href="https://github.com/Team-Deadly/deadly-userbot/stargazers"><img src="https://img.shields.io/github/stars/Team-Deadly/deadly-userbot?logoColor=red&style=wood"></a><p align="left"><a href="https://github.com/Team-Deadly/deadly-userbot"></a><p align="left"><a href="https://github.com/Team-Deadly/deadly-userbot?"><img src="https://img.shields.io/github/last-commit/Team-Deadly/deadly-userbot?style=paper"></
 
 -------------------------------------------------
 
