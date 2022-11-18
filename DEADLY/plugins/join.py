@@ -1,5 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
+from DEADLY import SUDOERS
 
 @Client.on_message(filters.command("join", ".") & filters.me)
 async def join(client: Client, message: Message):
