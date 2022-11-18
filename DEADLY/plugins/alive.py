@@ -9,7 +9,8 @@ from pyrogram import Client
 from pyrogram.types import Message
 from pyrogram import __version__ as pversion
 from resources.data import PROGROUPS, DEV
-from DEADLY import ALIVE_PIC, SUDOERS
+from .sudo import SUDOERS
+from DEADLY import ALIVE_PIC
 
 
 
