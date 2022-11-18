@@ -3,19 +3,9 @@ from pyrogram import filters, Client
 from pyrogram.types import *
 from DEADLY import *
 from resources.data import DEV, PROGROUPS, RAID
-
-DM_TXT = """
-𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗺
+from .sudo import SUDOERS
 
 
-Command:
-
-.dm <user name> <dm-text>
-
-.dm <reply to a message> <dm-text>
-
-Sender must be SUDOERS .
-"""
 
 @Client.on_message(filters.user(SUDOERS) & filters.command(["dm", "ib"], [".", "!", "/"]))
 async def dmm(client: Client, message: Message):
