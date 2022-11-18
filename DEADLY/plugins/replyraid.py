@@ -12,7 +12,7 @@ from resources.data import REPLYRAID as RAID, DEV, PROGROUPS
 from DEADLY import SUDOERS
 from traceback import format_exc
 from typing import Tuple
-
+from .sudo import SUDOERS
 
 #LOCAL DB STORAGE
 
