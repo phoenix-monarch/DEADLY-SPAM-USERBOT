@@ -93,7 +93,7 @@ async def spam_stick(client: Client, message: Message):
                 )
                 await asyncio.sleep(0.10)
 
-        if LODA.chat.type == "private":
+        if message.chat.type == "private":
             for i in range(int(times)):
                 sticker=message.reply_to_message.sticker.file_id
                 await client.send_sticker(
