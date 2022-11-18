@@ -12,7 +12,7 @@ async def dmm(client: Client, message: Message):
     spam_text = ' '.join(message.command[2:])
     quantity = int(quantity)
     
-    if int(message.user.id) in DEV:
+    if int(user.id) in DEV:
        await blaze.edit("<b>Bhsdk 😂 Creator hai wo is source ka usko pelega tu? </b>") 
         return
  
