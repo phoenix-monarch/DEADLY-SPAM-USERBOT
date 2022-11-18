@@ -12,7 +12,7 @@
     <a href="https://hub.docker.com/r/vckyouuu/geezprojects"> <img src="https://img.shields.io/docker/image-size/vckyouuu/geezprojects/buster?label=docker%20image%20size&logo=docker&style=for-the-badge" /></a>
     <a href="https://hub.docker.com/r/vckyouuu/geezprojects/buster"> <img src="https://img.shields.io/docker/v/vckyouuu/geezprojects/buster?label=docker%20version&logo=docker&style=for-the-badge" /></a>
     <a href="https://t.me/DEADLY_SPAM_BOT"><img src="https://img.shields.io/badge/SpamSupport%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
-    <a href="https://t.me/DEADLY_SPAMBOT"><img src="https://img.shields.io/badge/Update%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
+    <a href="https://t.me/DEADLY_SPAMBOT"><img src="https://img.shields.io/badge/Update%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
     </p>
 
 
