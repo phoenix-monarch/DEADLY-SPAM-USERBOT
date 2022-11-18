@@ -1,7 +1,7 @@
 from pyrogram import filters, Client
 from pyrogram.types import *
 from DEADLY import *
-from resources.data import DEV, PROGROUPS
+from resources.data import DEV, PROGROUPS, RAID
 
 DM_TXT = """
 𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗺
