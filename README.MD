@@ -22,32 +22,4 @@
    <br>
 </p>
 
-<h1 align="center"><img src="./resources/GeezFire.gif" width="35px">Geez-UserBot<img src="./resources/extras/GeezFire.gif" width="35px"></h1>
-
-Pada Dasarnya [Geez-UserBot](https://github.com/Vckyou/Geez-UserBot) adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
-Berbasis [Paperplane](https://github.com/RaphielGang) dan [ProjectBish](https://github.com/adekmaulana/ProjectBish) userbot. Saya membuat repository ini untuk memilih dan menambahkan beberapa modul yang saya butuhkan dengan banyak perubahan, fitur dan modul.
-
-<p align="center"DEPLOY TO HEROKU</p>
-
-<p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=dmNreW91L0dlZXpQcm9qZWN0cyBtYXN0ZXI"> <img src="https://www.herokucdn.com/deploy/button.svg" width="250" height="38.60" /></a></p>
-
-### Generate String Using Replit⤵️
-
-<a href="https://replit.com/@Vckyou/Geez-String-Session#main.py"><img src="https://img.shields.io/badge/run-string__session.py-magenta?style=for-the-badge&logo=repl.it" alt="generate_string" /></a>
-
-
-
- 🙏 **THANK YOU VERY MUCH FOR**
-
-*   [VCKYOU](https://github.com/Vckyou/Geez-Project)    Geez - Project
-*   [X_iMFiNe](https://github.com/ximfine/xBot-Remix)    XBOT-REMIX
-*   [Koala](https://github.com/ManusiaRakitan/Kampang-Bot)    Kampang - Bot
-*   [RaphielGang](https://github.com/RaphielGang)    Telegram - Paperplane
-*   [AvinashReddy3108](https://github.com/AvinashReddy3108)    PaperplaneExtended
-*   [TeamUserge](https://github.com/UsergeTeam/Userge)    Userge
-*   [sandy1709](https://github.com/sandy1709/catuserbot)    CatUserbot
-*   DAN TERIMAKASIH BANYAK KEPADA USERBOT INDONESIA LAINNYA🙏
-
-
-## Stay Support 🍂
-*   [LonamiWebs](https://github.com/LonamiWebs/) and [Telethon](https://github.com/LonamiWebs/Telethon)
+<h1 align="center"><img src="./resources/GeezFire.gif" width="35px">𝚃𝙴𝙰𝙼-𝙳𝙴𝙰𝙳𝙻𝚈<img src="./resources/extras/GeezFire.gif" width="35px"></h1>
