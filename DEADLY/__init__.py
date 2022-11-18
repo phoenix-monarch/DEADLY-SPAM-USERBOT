@@ -18,7 +18,6 @@ from config import *
 
 
 
-SUDOER = []
 
 if ALIVE_PIC:
     ALIVE_PIC = ALIVE_PIC
