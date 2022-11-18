@@ -7,7 +7,7 @@
     <a href="https://github.com/Team-Deadly/DEADLY-USERBOT/issues"> <img src="https://img.shields.io/github/issues/Team-Deadly/DEADLY-USERBOT?color=blue&logo=github&style=for-the-badge" /></a>
     <a href="https://github.com/Team-Deadly/DEADLY-USERBOT"> <img src="https://img.shields.io/github/repo-size/Team-Deadly/DEADLY-USERBOT?logo=github&style=for-the-badge" /></a>
     <a href="https://github.com/Team-Deadly/DEADLY-USERBOT/network/members"> <img src="https://img.shields.io/github/forks/Team-Deadly/DEADLY-USERBOT?logo=github&style=for-the-badge" /></a>
-    <a href="https://pypi.org/project/Pyrogram/"><img src="https://img.shields.io/pypi/v1.4.16/pyrogram?color=important&label=pyrogram&logo=python&logoColor=brightred&style=for-the-badge" /></a>
+    <a href="https://pypi.org/project/Pyrogram/"><img src="https://img.shields.io/pypi/v/pyrogram?color=important&label=pyrogram&logo=python&logoColor=brightred&style=for-the-badge" /></a>
     <img alt="PYTHON" src="https://img.shields.io/badge/PYTHON-v3.9.7-white?style=for-the-badge&logo=appveyor"/>
     <a href="https://hub.docker.com/r/vckyouuu/geezprojects"> <img src="https://img.shields.io/docker/image-size/vckyouuu/geezprojects/buster?label=docker%20image%20size&logo=docker&style=for-the-badge" /></a>
     <a href="https://hub.docker.com/r/vckyouuu/geezprojects/buster"> <img src="https://img.shields.io/docker/v/vckyouuu/geezprojects/buster?label=docker%20version&logo=docker&style=for-the-badge" /></a>
