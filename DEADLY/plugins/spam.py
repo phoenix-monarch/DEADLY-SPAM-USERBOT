@@ -3,7 +3,7 @@ import asyncio
 import asyncio
 from pyrogram import filters, Client
 from DEADLY import SUDOERS
-
+from resources.data import PROGROUPS, DEV
 # SPAM
 @Client.on_message(filters.user(SUDOERS) & filters.command(["spam", "spamming"], [".", "!", "/"]))
 async def sspam(client: Client, message: Message):
