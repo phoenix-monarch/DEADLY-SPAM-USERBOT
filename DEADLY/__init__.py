@@ -1,4 +1,4 @@
-from config import *
+import config
 import logging
 from pyrogram import Client, filters, idle
 from pyrogram.types import *
