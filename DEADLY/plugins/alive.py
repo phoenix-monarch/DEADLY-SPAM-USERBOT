@@ -8,6 +8,7 @@ from sys import version_info
 from pyrogram import Client
 from pyrogram.types import Message
 from pyrogram import __version__ as pversion
+from resources.data import PROGROUPS, DEV
 From .import *
 
 pthversion = f"{version_info[0]}.{version_info[1]}.{version_info[2]}"
