@@ -10,25 +10,10 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
 
-API_ID = API_ID
-API_HASH = API_HASH
-OWNER_ID = OWNER_ID
-ALIVE_PIC = ALIVE_PIC
-SUDOERS = SUDO_USERS
 
 
-#Client
 
-STRING1 = STRING1
-STRING2 = STRING2
-STRING3 = STRING3
-STRING4 = STRING4
-STRING5 = STRING5
-STRING6 = STRING6
-STRING7 = STRING7
-STRING8 = STRING8
-STRING9 = STRING9
-STRING10 = STRING10
+from config import *
 
 if ALIVE_PIC:
     ALIVE_PIC = ALIVE_PIC
