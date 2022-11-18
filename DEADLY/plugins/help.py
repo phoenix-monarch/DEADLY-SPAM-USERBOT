@@ -3,6 +3,7 @@ from sys import version_info
 from pyrogram import Client
 from pyrogram.types import Message
 from config import *
+from .sudo import SUDOERS
 
 HELP_TXT = """
 
