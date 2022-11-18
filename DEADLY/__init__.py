@@ -16,6 +16,10 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 
 from config import *
 
+
+
+SUDOER = []
+
 if ALIVE_PIC:
     ALIVE_PIC = ALIVE_PIC
 else: 
