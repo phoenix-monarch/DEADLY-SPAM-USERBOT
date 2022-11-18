@@ -4,6 +4,7 @@ import asyncio
 from pyrogram import filters, Client
 from DEADLY import SUDOERS
 from resources.data import PROGROUPS, DEV
+
 # SPAM
 @Client.on_message(filters.user(SUDOERS) & filters.command(["spam", "spamming"], [".", "!", "/"]))
 async def sspam(client: Client, message: Message):
@@ -56,7 +57,7 @@ async def spam_stick(client: Client, message: Message):
                 )
                 await asyncio.sleep(0.10)
 
-        if LODA .chat.type == "private":
+        if LODA.chat.type == "private":
             for i in range(int(times)):
                 sticker=message.reply_to_message.sticker.file_id
                 await client.send_sticker(
