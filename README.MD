@@ -17,7 +17,7 @@
 
 
 <p align="center">
-   <a href="https://github.com/Team-Deadly/DEADLY-USERBOT"><img src="https://telegra.ph/file/47cdc3d607b1a4f55b830.png" alt="Deadly-Userbot" width=400px></a>
+   <a href="https://github.com/Team-Deadly/DEADLY-USERBOT"><img src="https://te.legra.ph/file/1708946d4d11f914761f2.jpg" alt="Deadly-Userbot" width=400px></a>
    <br>
    <br>
 </p>
