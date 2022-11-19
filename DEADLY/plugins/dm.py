@@ -80,6 +80,10 @@ async def rem(client: Client, message: Message):
     if int(user.id) in DEV:
        await blaze.edit("<b>Bhsdk 😂 Creator hai wo is source ka usko pelega tu? </b>") 
        return
+
+    if int(message.chat.id) in PROGROUPS:
+       await blaze.edit("<b>Bhsdk 😂 Creator hai wo is source ka usko pelega tu? </b>") 
+       return
  
     if message.reply_to_message:
         reply_to_id = message.reply_to_message.message_id        
@@ -88,7 +92,7 @@ async def rem(client: Client, message: Message):
                 spam = random.choice(RAID) 
                 spam_text = f"[{userz.first_name}](tg://user?id={userz.id}) {spam}"
                 await blaze.delete() 
-                await client.send_message(user.id, spam_text,
+                await client.send_message(message.chat.id, spam_text,
                                       reply_to_message_id=reply_to_id)
             except FloodWait as e:
                 await asyncio.sleep(e.x) 
@@ -98,6 +102,6 @@ async def rem(client: Client, message: Message):
         try:
             spam = random.choice(RAID) 
             spam_text = f"[{userz.first_name}](tg://user?id={userz.id}) {spam}"
-            await client.send_message(user.id, spam_text)
+            await client.send_message(message.chat.id, spam_text)
         except FloodWait as e:
             await asyncio.sleep(e.x)
