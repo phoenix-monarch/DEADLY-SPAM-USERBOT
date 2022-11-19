@@ -5,6 +5,7 @@ import re
 from random import choice
 
 from DEADLY import *
+from config import *
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from resources.data import *
