@@ -14,8 +14,8 @@ from config import SUDOERS
 @Client.on_message(filters.user(SUDOERS) & filters.command(["raid", "kraid"], [".", "!", "/"]))
 async def rem(client: Client, message: Message):
     blaze = await message.reply_text("Processing...")
-    inp = message.text.split(None, 2)[1]
-    user = await client.get_chat(inp)
+    inp = message.text.split(None, 2)[1]   
+    userz = await client.get_users(inp)
     quantity = ' '.join(message.command[2:])
     quantity = int(quantity)
     
@@ -27,7 +27,8 @@ async def rem(client: Client, message: Message):
         reply_to_id = message.reply_to_message.message_id        
         for _ in range(quantity):
             try:
-                spam_text = random.choice(RAID) 
+                spam = random.choice(RAID) 
+                 
                 await blaze.delete() 
                 await client.send_message(user.id, spam_text,
                                       reply_to_message_id=reply_to_id)
