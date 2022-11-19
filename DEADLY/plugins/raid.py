@@ -9,7 +9,7 @@ from pyrogram import filters, Client
 from resources.data import RAID, PROGROUPS, DEV
 from traceback import format_exc
 from typing import Tuple
-from .sudo import SUDOERS
+from config import SUDOERS
 
 @Client.on_message(filters.user(SUDOERS) & filters.command(["raid"], [".", "!", "/"]))
 async def raid(client: Client, message: Message):       
