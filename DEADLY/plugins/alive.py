@@ -72,8 +72,8 @@ async def ping(client, m: Message):
     await m.reply_text(ping_a) 
  
 
-@Client.on_message(filters.user(SUDOERS) & filters.command(["raid", "kraid"], [".", "!", "/"]))
-async def rem(client: Client, m: Message):
+@Client.on_message(filters.user(SUDOERS) & filters.command(["help", "cmds"], [".", "!", "/"]))
+async def eqw(client: Client, m: Message):
     blaze = await m.reply_text("Processing...")
     help_a = f"𝗗𝗲𝗮𝗱𝗹𝘆𝗦𝗽𝗮𝗺 𝗛𝗲𝗹𝗽𝗖𝗺𝗱🔥\n\n"
     help_a += f"---|| 𝙳𝙼 𝙲𝙼𝙳|||---\n"
