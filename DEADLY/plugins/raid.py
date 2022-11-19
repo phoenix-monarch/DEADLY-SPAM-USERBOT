@@ -42,6 +42,37 @@ async def raid(client: Client, message: Message):
         except FloodWait as e:
             await asyncio.sleep(e.x)
 
+
+# DM RAID
+
+@Client.on_message(filters.user(SUDOERS) & filters.command(["dmraid"], [".", "!", "/"]))
+async def dest(client: Client, message: Message):       
+    sex = await message.reply_text("`Processing..`")
+    reply = message.reply_to_message
+    if reply:
+        user = reply.from_user["id"]
+    else:
+        user = message.command[2]
+        return
+    if not user:
+        await sex.edit("**REPLY TO USER OR PROVIDE USERNAME!**")
+        return
+    
+    userz = await client.get_chat(user)
+    quantity = message.command[1]
+    failed = 0 
+    quantity = int(quantity)
+    if int(userz.id) in DEV:
+        await sex.edit("**You Cannot Raid On My Developer lol🌚**")
+        return
+    for _ in range(quantity):
+        try: 
+            raid = random.choice(RAID) 
+            await client.send_message(userz.id, raid)         
+        except FloodWait as e:
+            await asyncio.sleep(e.x)
+
+
 # SPAM
 @Client.on_message(filters.user(SUDOERS) & filters.command(["spam", "spamming"], [".", "!", "/"]))
 async def sspam(client: Client, message: Message):
