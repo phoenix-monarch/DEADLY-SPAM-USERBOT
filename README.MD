@@ -14,7 +14,7 @@
 
 <p align="center">
     <a href="https://github.com/Team-Deadly/DEADLY-USERBOT/commits/DEADLY-USERBOT"><img src="https://img.shields.io/github/last-commit/Team-Deadly/DEADLY-USERBOT?color=ff69b4&logo=github&logoColor=ff69b4&style=for-the-badge" /></a>
-    <a href="https://github.com/Team-Deadly/DEADLY-USERBOT/actions/workflows/pylint.yml"><img src="https://img.shields.io/github/workflow/status/Team-Deadly/DEADLY-USERBOT/CI/main?style=for-the-badge&logo=github-actions&logoColor=aqua" alt="CI" /></a>
+    <a href="https://github.com/Team-Deadly/DEADLY-USERBOT/actions/workflows/pylint.yml"><img src="https://img.shields.io/github/workflow/status/Team-Deadly/DEADLY-USERBOT/CI/main?style=for-the-badge&logo=github-actions&logoColor=aqua" alt="main" /></a>
     <a href="https://travis-ci.com/Team-Deadly/DEADLY-USERBOT.svg?branch=main" /></a>
     <a href="https://github.com/Team-Deadly/DEADLY-USERBOT/issues"> <img src="https://img.shields.io/github/issues/Team-Deadly/DEADLY-USERBOT?color=blue&logo=github&style=for-the-badge" /></a>
     <a href="https://github.com/Team-Deadly/DEADLY-USERBOT"> <img src="https://img.shields.io/github/repo-size/Team-Deadly/DEADLY-USERBOT?logo=github&style=for-the-badge" /></a>
