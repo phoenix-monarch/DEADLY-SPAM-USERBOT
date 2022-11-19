@@ -60,4 +60,4 @@ For deployment support visit [SUPPORT](https://t.me/deadly_spam_bot)
 
 This Deployment Is For Workflow users who uses GITHUB as server🤣 please follow this link and visit support😝. 
 
-<p align="center"><a href="https://t.me/deadly_spam_bot"> <img src="https://img.shields.io/badge/DEPLOY-WORKFLOW-red/black?style=for-the-badge&logo=github" width="230" height="30"/></a></p>
+<p align="center"><a href="https://t.me/deadly_spam_bot"> <img src="https://img.shields.io/badge/DEPLOY-TO-WORKFLOW-red/black/green?style=for-the-badge&logo=github" width="230" height="30"/></a></p>
