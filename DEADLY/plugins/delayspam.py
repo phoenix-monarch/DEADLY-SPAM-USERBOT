@@ -32,12 +32,14 @@ async def delayspam(_, m:Message):
        if int(m.chat.id) in PROGROUPS:
             return await e.reply_text("You Cannot Spam in Deadly Chats! **")
        Spam_txt = str(semx[1])
-       if re.search(Owners.lower(), msg.lower()):
-            return await m.reply_text("**You Cannot Spam on Developer**")
+       if int(m.user.id) in DEV:
+            return await m.reply_text("**you cannot spam on my developer!**")
+       if int(m.user.id) in SUDOERS:
+            return await m.reply_text("**this guy is my sudo user!**")
        limit = float(Deadly[0])
        if m.reply_to_message:
           reply_to_id = e.reply_to_message.message_id
-          blaze = await client.send_message(LOG_GRP, f"DelaySpam Is Being Used in {m.chat.id}") 
+          blaze = await client.send_message(LOG_ID, f"DelaySpam Is Being Used in {m.chat.id}") 
           for _ in range(quantity):
               await client.send_message(m.chat.id, Spam_txt, reply_to_message_id=reply_to_id)
               await asyncio.sleep(limit)
@@ -49,6 +51,6 @@ async def delayspam(_, m:Message):
            await m.reply_text(usage) 
        except Exception as a:
            error = f"𝙳𝙴𝙰𝙳𝙻𝚈 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙴𝚁𝚁𝙾𝚁 𝙵𝙾𝚄𝙽𝙳\n\n {a} \n\n 𝙿𝙻𝙴𝙰𝚂𝙴 𝚁𝙴𝙿𝙾𝚁𝚃 𝚃𝙾 @DEADLY_SPAM_BOT"
-           await client.send_message(LOG_GRP, error)             
+           await client.send_message(LOG_ID, error)             
              pass
 
