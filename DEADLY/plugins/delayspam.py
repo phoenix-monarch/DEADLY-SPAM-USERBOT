@@ -26,31 +26,21 @@ from resources.data import *
 async def delayspam(_, m:Message):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗹𝗮𝘆𝗦𝗽𝗮𝗺\n\nCommand:\n\n.delayspam <sleep time> <count> <message to spam>\n\n.delayspam <sleep time> <count> <reply to a message>\n\nCount and Sleeptime must be a integer."     
     Deadly = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
-    semx = Deadly[1:]
-    if len(semx) == 2:
-       quantity = int(semx[0])
-       if int(m.chat.id) in PROGROUPS:
-            return await e.reply_text("You Cannot Spam in Deadly Chats! **")
-       Spam_txt = str(semx[1])
-       if int(m.user.id) in DEV:
-            return await m.reply_text("**you cannot spam on my developer!**")
-       if int(m.user.id) in SUDOERS:
-            return await m.reply_text("**this guy is my sudo user!**")
-       limit = float(Deadly[0])
-       if m.reply_to_message:
-          reply_to_id = e.reply_to_message.message_id
-          blaze = await client.send_message(LOG_ID, f"DelaySpam Is Being Used in {m.chat.id}") 
-          for _ in range(quantity):
-              await client.send_message(m.chat.id, Spam_txt, reply_to_message_id=reply_to_id)
-              await asyncio.sleep(limit)
-          return
-       for _ in range(quantity):
-           await client.send_message(m.chat.id, Spam_txt)
-           await asyncio.sleep(limit)
-       else:
-           await m.reply_text(usage) 
-       except Exception as a:
-           error = f"𝙳𝙴𝙰𝙳𝙻𝚈 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙴𝚁𝚁𝙾𝚁 𝙵𝙾𝚄𝙽𝙳\n\n {a} \n\n 𝙿𝙻𝙴𝙰𝚂𝙴 𝚁𝙴𝙿𝙾𝚁𝚃 𝚃𝙾 @DEADLY_SPAM_BOT"
-           await client.send_message(LOG_ID, error)             
-             pass
-
+        Deadlysexy = Deadly[1:]
+        if len(Deadlysexy) == 2:
+            message = str(Deadlysexy[1])
+            counter = int(Deadlysexy[0])
+            sleeptime = float(Deadly[0]) 
+            if int(m.chat.id) in PROGROUP:
+            return await _.reply_text("**Sorry !! Cannot Spam in here.**")
+            if m.reply_to_message:
+               reply_to_id = m.reply_to_message.message_id
+               for _ in range(counter):
+                   await _.send_message(m.chat_id, message)
+                   await asyncio.sleep(sleeptime)
+               return
+            for _ in range(counter):
+                await _.send_message(m.chat_id, message)
+                await asyncio.sleep(sleeptime)
+        else:
+            await e.reply(usage)
