@@ -1,8 +1,17 @@
+import asyncio
 import random
+import asyncio
+import time
 
+from typing import Tuple
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.types import Message
+from pyrogram.errors import FloodWait
 from pyrogram import filters, Client
 from resources.data import REPLYRAID as RAID, DEV, PROGROUPS
 from .sudo import SUDOERS
+from traceback import format_exc
+from typing import Tuple
 from .sudo import SUDOERS
 
 #LOCAL DB STORAGE
@@ -88,7 +97,7 @@ async def check_and_del(app: Client, message):
             return
     except AttributeError:
         return
-    message.message_id
+    message_id = message.message_id
     try:
         await message.reply_text(f"{random.choice(RAID)}")
     except:
