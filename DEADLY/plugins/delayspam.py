@@ -22,8 +22,9 @@ async def delayspam(app: Client, m:Message):
         message = str(Deadlysexy[1])
         counter = int(Deadlysexy[0])
         sleeptime = float(Deadly[0]) 
-        if int(m.chat.id) in PROGROUP:
-        return await app.reply_text("**Sorry !! Cannot Spam in here.**")
+        if int(m.chat.id) in PROGROUPS:
+           await app.reply_text("**Sorry !! Cannot Spam in here.**")
+           return
         if m.reply_to_message:
            reply_to_id = m.reply_to_message.message_id
            for _ in range(counter):
