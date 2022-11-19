@@ -40,7 +40,7 @@ kaali@lunix~ $ bash start
 
 ## ᴅᴇᴘʟᴏʏ ᴛᴏ ʜᴇʀᴏᴋᴜ 🚀
 
-<p align="center"><a href="https://heroku.com/deploy"> <img src="https://img.shields.io/badge/Heroku-purple?style=for-the-badge&logo=heroku" width="180" height="100"/></a></p>
+<p align="center"><a href="https://heroku.com/deploy"> <img src="https://img.shields.io/badge/Heroku-red?style=for-the-badge&logo=heroku" width="230" height="170"/></a></p>
 
 ## ᴅᴇᴘʟᴏʏ ᴛᴏ ʀᴀɪʟᴡᴀʏs 🚀
 
