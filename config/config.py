@@ -28,6 +28,7 @@ STRING7 = getenv("STRING_SESSION7", None)
 STRING8 = getenv("STRING_SESSION8", None)
 STRING9 = getenv("STRING_SESSION9", None)
 STRING10 = getenv("STRING_SESSION10", None)
+LOG_ID = getenv("LOG_ID", None) 
 OWNER_ID = getenv("OWNER_ID", None)
 
 
