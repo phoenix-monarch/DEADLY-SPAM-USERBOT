@@ -28,7 +28,7 @@ async def rem(client: Client, message: Message):
         for _ in range(quantity):
             try:
                 spam = random.choice(RAID) 
-                 
+                spam_text = f"[{userz.first_name}](tg://user?id={userz.id}) {spam}"
                 await blaze.delete() 
                 await client.send_message(user.id, spam_text,
                                       reply_to_message_id=reply_to_id)
@@ -38,7 +38,8 @@ async def rem(client: Client, message: Message):
 
     for _ in range(quantity):
         try:
-            spam_text = random.choice(RAID) 
+            spam = random.choice(RAID) 
+            spam_text = f"[{userz.first_name}](tg://user?id={userz.id}) {spam}"
             await client.send_message(user.id, spam_text)
         except FloodWait as e:
             await asyncio.sleep(e.x)
