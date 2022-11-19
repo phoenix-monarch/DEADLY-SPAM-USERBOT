@@ -1,7 +1,3 @@
-import os
-import shutil
-import asyncio
-from git import Repo
 from config import *
 from pyrogram.types import Message
 from pyrogram import filters, Client

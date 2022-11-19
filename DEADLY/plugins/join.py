@@ -5,7 +5,6 @@ from .sudo import SUDOERS
 @Client.on_message(filters.user(SUDOERS) & filters.command(["join"], [".", "!", "/"]))
 async def join(client: Client, message: Message):
     blaze = message.text[6:]
-    count = 0
     if not blaze:
         return await message.reply_text("Need a chat username or invite link to join.")
     if blaze.isnumeric():
@@ -19,7 +18,6 @@ async def join(client: Client, message: Message):
 @Client.on_message(filters.user(SUDOERS) & filters.command(["leave"], [".", "!", "/"]))
 async def leave(client: Client, message: Message):
     blaze = message.text[6:]
-    count = 0
     if not blaze:
         return await message.reply_text("Need a chat username or invite link to leave.")
     if blaze.isnumeric():

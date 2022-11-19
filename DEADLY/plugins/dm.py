@@ -2,7 +2,7 @@ from pyrogram.errors import FloodWait
 from pyrogram import filters, Client
 from pyrogram.types import *
 from DEADLY import *
-from resources.data import DEV, PROGROUPS, RAID
+from resources.data import DEV, RAID
 from .sudo import SUDOERS
 
 

@@ -1,6 +1,3 @@
-import os
-import sys
-import asyncio
 from time import time
 from datetime import datetime
 from pyrogram import filters
@@ -8,7 +5,6 @@ from sys import version_info
 from pyrogram import Client
 from pyrogram.types import Message
 from pyrogram import __version__ as pversion
-from resources.data import PROGROUPS, DEV
 from .sudo import SUDOERS
 from DEADLY import ALIVE_PIC
 
@@ -68,6 +64,6 @@ async def ping(client, m: Message):
     current_time = datetime.utcnow()
     delta_ping = time() - start
     uptime_sec = (current_time - START_TIME).total_seconds()
-    uptime = await _human_time_duration(int(uptime_sec))   
+    await _human_time_duration(int(uptime_sec))   
     await m.delete() 
     await m.reply_text(f"🎉 🇵 🇴 🇳 🇬 !\n\n♡︎ `{delta_ping * 1000:.3f}` 𝗺𝘀 ♡︎")

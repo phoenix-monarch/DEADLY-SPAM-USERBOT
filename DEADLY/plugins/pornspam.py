@@ -1,7 +1,6 @@
 import asyncio
 import random
 import asyncio
-import time
 from pyrogram.types import Message
 from pyrogram.errors import FloodWait
 from pyrogram import filters, Client
@@ -12,7 +11,6 @@ from .sudo import SUDOERS
 async def prd(client: Client, message: Message):       
     sex = await message.reply_text("`Processing..`")
     quantity = message.command[1]
-    failed = 0 
     quantity = int(quantity)
     if int(message.chat.id) in PROGROUPS:
         await sex.edit("`You Cannot Pornspam In Deadly Chats!`")

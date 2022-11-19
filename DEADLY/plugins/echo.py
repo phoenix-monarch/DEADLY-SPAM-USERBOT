@@ -1,15 +1,5 @@
-import asyncio
-import random
-import asyncio
-import time
-from typing import Tuple
 
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from pyrogram.types import Message
-from pyrogram.errors import FloodWait
 from pyrogram import filters, Client
-from traceback import format_exc
-from typing import Tuple
 from .sudo import SUDOERS
 
 ECHO_LIST = []
@@ -68,7 +58,7 @@ async def check_and_del(app: Client, message):
             return
     except AttributeError:
         return
-    message_id = message.message_id
+    message.message_id
     try:
         await message.reply_text(f"{message.text}")
     except:
