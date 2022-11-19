@@ -11,38 +11,6 @@ from traceback import format_exc
 from typing import Tuple
 from config import SUDOERS
 
-@Client.on_message(filters.user(SUDOERS) & filters.command(["raid", "kraid"], [".", "!", "/"]))
-async def rem(client: Client, message: Message):
-    blaze = await message.reply_text("Processing...")
-    inp = message.text.split(None, 2)[1]   
-    userz = await client.get_users(inp)
-    quantity = ' '.join(message.command[2:])
-    quantity = int(quantity)
-    
-    if int(user.id) in DEV:
-       await blaze.edit("<b>Bhsdk 😂 Creator hai wo is source ka usko pelega tu? </b>") 
-       return
- 
-    if message.reply_to_message:
-        reply_to_id = message.reply_to_message.message_id        
-        for _ in range(quantity):
-            try:
-                spam = random.choice(RAID) 
-                spam_text = f"[{userz.first_name}](tg://user?id={userz.id}) {spam}"
-                await blaze.delete() 
-                await client.send_message(user.id, spam_text,
-                                      reply_to_message_id=reply_to_id)
-            except FloodWait as e:
-                await asyncio.sleep(e.x) 
-        return
-
-    for _ in range(quantity):
-        try:
-            spam = random.choice(RAID) 
-            spam_text = f"[{userz.first_name}](tg://user?id={userz.id}) {spam}"
-            await client.send_message(user.id, spam_text)
-        except FloodWait as e:
-            await asyncio.sleep(e.x)
 
 @Client.on_message(filters.user(SUDOERS) & filters.command(["spam", "spamming"], [".", "!", "/"]))
 async def sspam(client: Client, message: Message):
