@@ -50,7 +50,10 @@ If You Face Any Error In Heroku Visit [Support](https://t.me/The_deadly_support)
 
 ## ᴅᴇᴘʟᴏʏ ᴛᴏ ʀᴀɪʟᴡᴀʏs 🚀
 
+May this button not work on deploying to railway better fork this repo and manually deploy to railways 
 
 <p align="center"><a href="https://railway.app/new/template?template=https://github.com/Team-Deadly/DEADLY-USERBOT&envs=STRING_SESSION10,STRING_SESSION9,STRING_SESSION8,STRING_SESSION7,STRING_SESSION6,STRING_SESSION5,STRING_SESSION4,STRING_SESSION3,STRING_SESSION2,STRING_SESSION,API_ID,API_HASH,SUDO_USERS,ALIVE_PIC,OWNER_ID"> <img src="https://img.shields.io/badge/Deploy%20To%20Railway-Blue?style=for-the-badge&logo=railway" width="260" height="39.75"/></a></p>
+
+For deployment support visit [SUPPORT](https://t.me/deadly_spam_bot)
 
 ## ᴅᴇᴘʟᴏʏ ᴛᴏ ɢɪᴛʜᴜʙ 🚀
