@@ -11,36 +11,36 @@ from traceback import format_exc
 from typing import Tuple
 from config import SUDOERS
 
-@Client.on_message(filters.user(SUDOERS) & filters.command(["raid"], [".", "!", "/"]))
-async def raid(client: Client, message: Message):       
-    sex = await message.reply_text("`Processing..`")
-    reply = message.reply_to_message
-    if reply:
-        user = reply.from_user["id"]
-    else:
-        user = message.command[2]
-        if not user:
-            await sex.edit("**REPLY TO USER OR PROVIDE USERNAME!**")
-            return
-    userz = await client.get_users(user)
-    quantity = message.command[1]
-    failed = 0 
+@Client.on_message(filters.user(SUDOERS) & filters.command(["raid", "kraid"], [".", "!", "/"]))
+async def rem(client: Client, message: Message):
+    blaze = await message.reply_text("Processing...")
+    inp = message.text.split(None, 2)[1]
+    user = await client.get_chat(inp)
+    quantity = ' '.join(message.command[2:])
     quantity = int(quantity)
-    if int(message.chat.id) in PROGROUPS:
-        await sex.edit("**Sorry You Cannot Spam In Deadly Chats!**")
-        return 
-    if int(userz.id) in DEV:
-        await sex.edit("**You Cannot Raid On My Developer lol🌚**")
+    
+    if int(user.id) in DEV:
+       await blaze.edit("<b>Bhsdk 😂 Creator hai wo is source ka usko pelega tu? </b>") 
+       return
+ 
+    if message.reply_to_message:
+        reply_to_id = message.reply_to_message.message_id        
+        for _ in range(quantity):
+            try:
+                spam_text = random.choice(RAID) 
+                await blaze.delete() 
+                await client.send_message(user.id, spam_text,
+                                      reply_to_message_id=reply_to_id)
+            except FloodWait as e:
+                await asyncio.sleep(e.x) 
         return
+
     for _ in range(quantity):
-        try: 
-            raid = random.choice(RAID) 
-            blaze = f"[{userz.first_name}](tg://user?id={userz.id}) {raid}"
-            await client.send_message(message.chat.id, blaze)         
+        try:
+            spam_text = random.choice(RAID) 
+            await client.send_message(user.id, spam_text)
         except FloodWait as e:
             await asyncio.sleep(e.x)
-
-
 
 @Client.on_message(filters.user(SUDOERS) & filters.command(["spam", "spamming"], [".", "!", "/"]))
 async def sspam(client: Client, message: Message):
