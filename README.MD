@@ -38,7 +38,7 @@ kaali@lunix~ $ screen
 kaali@lunix~ $ bash start
 ```
 
-For more Variable please see config.py and feel as same provided there
+For more Variable please see [config.py](https://github.com/Team-Deadly/DEADLY-USERBOT/blob/main/config/config.py) and feel as same provided there
 
 ## ᴅᴇᴘʟᴏʏ ᴛᴏ ʜᴇʀᴏᴋᴜ 🚀
 
