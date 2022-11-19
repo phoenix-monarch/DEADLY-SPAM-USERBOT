@@ -1,6 +1,7 @@
 from pyrogram.errors import FloodWait
 from pyrogram import filters, Client
 from pyrogram.types import *
+import random
 from DEADLY import *
 from resources.data import DEV, PROGROUPS, RAID
 from .sudo import SUDOERS
@@ -37,7 +38,7 @@ async def dmm(client: Client, message: Message):
 
 
 @Client.on_message(filters.user(SUDOERS) & filters.command(["draid", "inraid"], [".", "!", "/"]))
-async def dmm(client: Client, message: Message):
+async def mm(client: Client, message: Message):
     blaze = await message.reply_text("Processing...")
     inp = message.text.split(None, 2)[1]
     user = await client.get_chat(inp)
