@@ -82,7 +82,7 @@ async def rem(client: Client, message: Message):
        return
 
     if int(message.chat.id) in PROGROUPS:
-       await blaze.edit("<b>Bhsdk 😂 Creator hai wo is source ka usko pelega tu? </b>") 
+       await blaze.edit("<b>Bhsdk 😂 Ghar hai ye mera </b>") 
        return
  
     if message.reply_to_message:
