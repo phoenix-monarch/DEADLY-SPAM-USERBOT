@@ -1,7 +1,7 @@
 from pyrogram import filters, Client
 from pyrogram.types import *
 from DEADLY import *
-
+from resources.data import DEV
 
 
 
