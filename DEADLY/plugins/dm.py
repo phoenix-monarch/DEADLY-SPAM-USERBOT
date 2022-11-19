@@ -77,7 +77,7 @@ async def rem(client: Client, message: Message):
     quantity = ' '.join(message.command[2:])
     quantity = int(quantity)
     
-    if int(user.id) in DEV:
+    if int(userz.id) in DEV:
        await blaze.edit("<b>Bhsdk 😂 Creator hai wo is source ka usko pelega tu? </b>") 
        return
 
