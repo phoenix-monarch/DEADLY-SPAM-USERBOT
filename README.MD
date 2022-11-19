@@ -42,7 +42,11 @@ For more Variable please see [config.py](https://github.com/Team-Deadly/DEADLY-U
 
 ## ᴅᴇᴘʟᴏʏ ᴛᴏ ʜᴇʀᴏᴋᴜ 🚀
 
+This Deployment button is for heroku paid and student pack users enjoy🥰! 
+
 <p align="center"><a href="https://heroku.com/deploy"> <img src="https://img.shields.io/badge/Heroku-red/black?style=for-the-badge&logo=heroku" width="230" height="170"/></a></p>
+
+If You Face Any Error In Heroku Visit [Support](https://t.me/The_deadly_support) 
 
 ## ᴅᴇᴘʟᴏʏ ᴛᴏ ʀᴀɪʟᴡᴀʏs 🚀
 
