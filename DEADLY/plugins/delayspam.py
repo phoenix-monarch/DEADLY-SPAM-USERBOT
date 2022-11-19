@@ -43,4 +43,4 @@ async def delayspam(_, m:Message):
                 await _.send_message(m.chat_id, message)
                 await asyncio.sleep(sleeptime)
         else:
-            await e.reply(usage)
+            await m.reply_text(usage)
