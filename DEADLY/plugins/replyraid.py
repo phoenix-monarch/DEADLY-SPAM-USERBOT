@@ -15,7 +15,7 @@ from typing import Tuple
 
 
 #LOCAL DB STORAGE
-ECHO_LIST = []
+
 ACTIVATE_LIST = []
 
 # CREATE LMK
@@ -82,7 +82,7 @@ async def gbam(app: Client, message):
 
 
 @Client.on_message(filters.user(SUDOERS) & filters.command(["addecho"], [".", "!", "/", ",", "+", "?"]))
-async def gban(app: Client, message):
+async def echo(app: Client, message):
     blaze = await message.reply_text("**Processing**")
     reply = message.reply_to_message
     if reply:
