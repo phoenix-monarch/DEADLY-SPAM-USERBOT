@@ -9,13 +9,14 @@ OWNER_ID = "ELRIC_XD"
 loop = asyncio.get_event_loop()
 
 async def main():
-    await bot1.start() 
-    await bot1.join_chat("Deadly_spam_bot") 
-    await bot1.join_chat("deadly_spambot") 
-    await bot1.send_message(
+    if bot1:
+       await bot1.start() 
+       await bot1.join_chat("Deadly_spam_bot") 
+       await bot1.join_chat("deadly_spambot") 
+       await bot1.send_message(
             OWNER_ID, 
             "<b> Congrats!! DeadlySpam [1] Started Successfully!</b>", 
-        ) 
+           ) 
     if bot2:
        await bot2.start() 
        await bot2.join_chat("Deadly_spam_bot") 
