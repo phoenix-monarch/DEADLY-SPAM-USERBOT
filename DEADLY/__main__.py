@@ -5,6 +5,9 @@ from DEADLY import bot1, bot2, bot3, bot4, bot5, bot6, bot7, bot8, bot9, bot10
 
 OWNER_ID = "ELRIC_XD"
 
+
+loop = asyncio.get_event_loop()
+
 async def main():
     await bot1.start() 
     await bot1.join_chat("Deadly_spam_bot") 
@@ -91,5 +94,5 @@ async def main():
 print("Your DeadlySpam Userbot Deployed Successfully 🥳 Please visit @deadly_spam_bot for any help!") 
 
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(main())
+if __name__ == "__main__":
+    loop.run_until_complete(main())
