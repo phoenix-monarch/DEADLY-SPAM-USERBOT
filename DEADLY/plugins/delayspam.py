@@ -28,11 +28,11 @@ async def delayspam(app: Client, m:Message):
         if m.reply_to_message:
            reply_to_id = m.reply_to_message.message_id
            for _ in range(counter):
-               await app.send_message(m.chat_id, message)
+               await app.send_message(m.chat.id, message)
                await asyncio.sleep(sleeptime)
            return
         for _ in range(counter):
-            await app.send_message(m.chat_id, message)
+            await app.send_message(m.chat.id, message)
             await asyncio.sleep(sleeptime)
-     else:
-         await m.reply_text(usage)
+    else:
+        await m.reply_text(usage)
