@@ -27,7 +27,7 @@ async def dmm(client: Client, message: Message):
     
     if int(user.id) in DEV:
        await blaze.edit("<b>Bhsdk 😂 Creator hai wo is source ka usko pelega tu? </b>") 
-        return
+       return
  
     if message.reply_to_message:
         reply_to_id = message.reply_to_message.message_id
