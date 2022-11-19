@@ -19,9 +19,10 @@ async def raid(client: Client, message: Message):
         user = reply.from_user["id"]
     else:
         user = message.command[2]
-        if not user:
-            await sex.edit("**REPLY TO USER OR PROVIDE USERNAME!**")
-            return
+    else:
+        await sex.edit("**REPLY TO USER OR PROVIDE USERNAME!**")
+        return
+
     userz = await client.get_users(user)
     quantity = message.command[1]
     failed = 0 
