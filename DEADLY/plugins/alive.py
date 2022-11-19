@@ -61,7 +61,7 @@ async def alive(client, m: Message):
 
 
 @Client.on_message(filters.user(SUDOERS) & filters.command(["ping", "pong"], [".", "!", "/", ",", "+", "?"]))
-async def alive(client, m: Message):
+async def ping(client, m: Message):
     start = time()
     current_time = datetime.utcnow()
     delta_ping = time() - start
