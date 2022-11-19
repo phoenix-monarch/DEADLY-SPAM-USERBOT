@@ -29,6 +29,7 @@
 
 ## ᴅᴇᴘʟᴏʏ ᴛᴏ ᴠᴘs 🚀
 
+You Can easily host this source on any vps/local server just follow the given steps shown bellow. 
 ```console
 kaali@lunix~ $ git clone https://github.com/Team-Deadly/DEADLY-USERBOT
 kaali@lunix~ $ cd DEADLY-USERBOT
@@ -37,6 +38,7 @@ kaali@lunix~ $ screen
 kaali@lunix~ $ bash start
 ```
 
+For more Variable please see config.py and feel as same provided there
 
 ## ᴅᴇᴘʟᴏʏ ᴛᴏ ʜᴇʀᴏᴋᴜ 🚀
 
