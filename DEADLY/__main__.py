@@ -1,3 +1,4 @@
+
 import config
 import asyncio
 from pyrogram import idle
@@ -5,16 +6,14 @@ from DEADLY import bot1, bot2, bot3, bot4, bot5, bot6, bot7, bot8, bot9, bot10
 
 OWNER_ID = "ELRIC_XD"
 
-
-
 async def main():
-       await bot1.start() 
-       await bot1.join_chat("Deadly_spam_bot") 
-       await bot1.join_chat("deadly_spambot") 
-       await bot1.send_message(
+    await bot1.start() 
+    await bot1.join_chat("Deadly_spam_bot") 
+    await bot1.join_chat("deadly_spambot") 
+    await bot1.send_message(
             OWNER_ID, 
             "<b> Congrats!! DeadlySpam [1] Started Successfully!</b>", 
-           ) 
+        ) 
     if bot2:
        await bot2.start() 
        await bot2.join_chat("Deadly_spam_bot") 
@@ -91,7 +90,6 @@ async def main():
 
 
 print("Your DeadlySpam Userbot Deployed Successfully 🥳 Please visit @deadly_spam_bot for any help!") 
-
 
 
 loop = asyncio.get_event_loop()
