@@ -3,22 +3,11 @@ from pyrogram.types import *
 from DEADLY import *
 
 
-DM_TXT = """
-𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗺
 
-
-Command:
-
-.dm <user name> <dm-text>
-
-.dm <reply to a message> <dm-text>
-
-Sender must be SUDOERS .
-"""
 
 @Client.on_message(filters.user(SUDOERS) & filters.command(["dm", "ib"], [".", "!", "/"]))
 async def dmm(client: Client, message: Message):
-    blaze = await message.reply_text(DM_TXT)
+    blaze = await message.reply_text("Processing..")
     quantity = 1
     inp = message.text.split(None, 2)[1]
     user = await client.get_chat(inp)
