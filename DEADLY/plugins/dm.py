@@ -2,7 +2,7 @@ from pyrogram.errors import FloodWait
 from pyrogram import filters, Client
 from pyrogram.types import *
 from DEADLY import *
-from resources.data import DEV, RAID
+from resources.data import DEV, PROGROUPS, RAID
 from .sudo import SUDOERS
 
 
@@ -65,4 +65,3 @@ async def dmm(client: Client, message: Message):
             await client.send_message(user.id, spam_text)
         except FloodWait as e:
             await asyncio.sleep(e.x)
-
