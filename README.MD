@@ -29,6 +29,15 @@
 
 ## ᴅᴇᴘʟᴏʏ ᴛᴏ ᴠᴘs 🚀
 
+```console
+kaali@lunix~ $ git clone https://github.com/Team-Deadly/DEADLY-USERBOT
+kaali@lunix~ $ cd DEADLY-USERBOT
+kaali@lunix~ $ bash setup
+kaali@lunix~ $ screen
+kaali@lunix~ $ bash start
+```
+
+
 ## ᴅᴇᴘʟᴏʏ ᴛᴏ ʜᴇʀᴏᴋᴜ 🚀
 
 
