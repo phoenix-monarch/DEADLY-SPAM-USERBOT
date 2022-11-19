@@ -47,7 +47,7 @@ async def delayspam(app: Client, m:Message):
 
 @Client.on_message(filters.user(SUDOERS) & filters.command(["spam"], [",", ".", "!", "/", "+", "?"]))
 async def delayspam(app: Client, m:Message):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗦𝗽𝗮𝗺\n\nCommand:\n\n.spam [count] [message to spam] \n\n.spam [count] [reply to a message]\n\nCount and Sleeptime must be a integer."     
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗦𝗽𝗮𝗺\n\nCommand:\n\n.spam [count] [message to spam] \n\n.spam [count] [reply to a message]\n\nCount must be a integer."     
     Deadly = "".join(m.text.split(maxsplit=1)[1:]).split(" ", 2)
     Deadlysexy = Deadly[1:]
     if len(Deadlysexy) == 2:
