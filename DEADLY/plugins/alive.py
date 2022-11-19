@@ -58,3 +58,16 @@ async def alive(client, m: Message):
     ALIVE_TXT += f"🔸[𝘀𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/Deadly_spam_bot)🔹|🔸[𝗰𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/Deadly_spambot)\n"
     await m.delete() 
     await m.reply_photo(photo=ALIVE_PIC, caption=ALIVE_TXT) 
+
+
+@Client.on_message(filters.user(SUDOERS) & filters.command(["ping", "pong"], [".", "!", "/", ",", "+", "?"]))
+async def alive(client, m: Message):
+    start = time()
+    current_time = datetime.utcnow()
+    delta_ping = time() - start
+    ping_a = f"𝙋𝙊𝙉𝙂:🏓\n\n"
+    ping_a += f"ʏᴏᴜʀ sᴘᴀᴍ ᴜʙ ɪs ғᴜɴᴄᴛɪᴏɴɪɴɢ ᴘʀᴏᴘᴇʀʟʏ🌹\n\n"  
+    ping_a = f"𝙋𝙊𝙉𝙂:🏓{delta_ping * 1000:.3f}\n"
+    await m.delete() 
+    await m.reply_text(ping_a) 
+ 
