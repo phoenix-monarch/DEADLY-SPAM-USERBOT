@@ -15,7 +15,7 @@ from typing import Tuple
 
 
 #LOCAL DB STORAGE
-
+ECHO_LIST = []
 ACTIVATE_LIST = []
 
 # CREATE LMK
