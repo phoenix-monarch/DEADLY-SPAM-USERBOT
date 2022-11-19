@@ -31,7 +31,7 @@ def get_arg(message):
 
 #REPLYRAID
 @Client.on_message(filters.user(SUDOERS) & filters.command(["replyraid", "rraid"], [".", "!"]))
-async def gban(app: Client, message):
+async def rnc(app: Client, message):
     elric= await message.reply_text("**Processing**")
     reply = message.reply_to_message
     if reply:
@@ -62,7 +62,7 @@ async def gban(app: Client, message):
 #DREPLYRAID
 
 @Client.on_message(filters.user(SUDOERS) & filters.command(["dreplyraid", "drraid"], [".", "!"]))
-async def gbam(app: Client, message):
+async def ctp(app: Client, message):
     elric= await message.reply_text("**Processing**")
     reply = message.reply_to_message
     if reply:
