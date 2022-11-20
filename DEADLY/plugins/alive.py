@@ -65,34 +65,35 @@ async def ping(client, m: Message):
     start = time()
     current_time = datetime.utcnow()
     delta_ping = time() - start
-    ping_a = f"𝙋𝙊𝙉𝙂:🏓\n\n"
-    ping_a += f"**Deadly On Fire** 🔥\n\n"  
-    ping_a += f"𝙋𝙊𝙉𝙂:🏓 {delta_ping * 1000:.3f}ᴍs\n"
+    ping_a = "▒█▀▀█ ▀█▀ ▒█▄░▒█ ▒█▀▀█\n▒█▄▄█ ▒█░ ▒█▒█▒█ ▒█░▄▄\n▒█░░░ ▄█▄ ▒█░░▀█ ▒█▄▄█\n\n"  
+    ping_b = f"𝙋𝙊𝙉𝙂:🏓 {delta_ping * 1000:.3f}ᴍs\n"
+    text = f"{ping_a} {ping_b}"
     await m.delete() 
-    await m.reply_text(ping_a) 
+    await m.reply_text(text) 
  
 
 @Client.on_message(filters.user(SUDOERS) & filters.command(["help", "cmds"], [".", "!", "/"]))
 async def eqw(client: Client, m: Message):
     blaze = await m.reply_text("Processing...")
-    help_a = f"𝗗𝗲𝗮𝗱𝗹𝘆𝗦𝗽𝗮𝗺 𝗛𝗲𝗹𝗽𝗖𝗺𝗱🔥\n\n"
-    help_a += f"---| 𝙳𝙼 𝙲𝙼𝙳 |---\n"
-    help_a += f".dm [username] [msz] \n"
-    help_a += f".dmraid [username] [count] \n\n"
-    help_a += f"---| 𝚁𝙰𝙸𝙳 𝙲𝙼𝙳 |---\n"
-    help_a += f".raid [username/reply_to_user] [count] \n"
-    help_a += f".replyraid [username/reply_to_user] \n"
-    help_a += f".dreplyraid [username/reply_to_user] \n\n"
-    help_a += f"---| 𝙴𝙲𝙷𝙾 𝙲𝙼𝙳 |---\n"
-    help_a += f".addecho [username/reply_to_user] \n"
-    help_a += f".rmecho [username/reply_to_user] \n\n"
-    help_a += f"---| 𝙱𝙾𝚃 𝙲𝙼𝙳 |---\n"
-    help_a += f".alive to check if alive \n"
-    help_a += f".ping to check ping \n"
-    help_a += f".restart to restart bot \n\n"
-    help_a += f"---| 𝚂𝙿𝙰𝙼 𝙲𝙼𝙳 |---\n"
-    help_a += f".spam [count] [spam_text] \n"
-    help_a += f".sspam [reply_to_sticker] [count]\n\n"
-    help_a += f"---| @THEDEADLYBOTS |---\n"
+    help_a = f"🔥𝗗𝗘𝗔𝗗𝗟𝗬 𝗦𝗣𝗔𝗠 𝗨𝗦𝗘𝗥𝗕𝗢𝗧🔥\n\n"
+    help_a += f"𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝙳𝙴𝙰𝙳𝙻𝚈 𝙲𝙼𝙳 𝙷𝙴𝙻𝙿\n\n"
+    help_a += f"🔸 𝐃𝐌 𝐂𝐌𝐃𝐒 🚀\n\n"
+    help_a += f".dm [username] [msz]\n"
+    help_a += f".draid [count]  [username/reply_to_user]\n\n"
+    help_a += f"🔹 𝐑𝐀𝐈𝐃 𝐂𝐌𝐃𝐒 🚀\n\n"
+    help_a += f".raid [count] [username/reply_to_user]\n"
+    help_a += f".replyraid [username/reply_to_user]\n"
+    help_a += f".dreplyraid [username/reply_to_user]\n\n"
+    help_a += f"🔸 𝐄𝐂𝐇𝐎 𝐂𝐌𝐃𝐒 🚀\n\n"
+    help_a += f".addecho [username/reply_to_user]\n"
+    help_a += f".rmecho [username/reply_to_user]\n\n"
+    help_a += f"🔹 𝐁𝐎𝐓 𝐂𝐌𝐃𝐒 🚀\n\n"
+    help_a += f".alive to check if alive\n"
+    help_a += f".ping to check ping\n"
+    help_a += f".restart to restart bot\n\n"
+    help_a += f"🔸 𝐒𝐏𝐀𝐌 𝐂𝐌𝐃𝐒 🚀\n\n"
+    help_a += f".spam [count] [spam_text]\n"
+    help_a += f".delayspam [sleep time] [count] [message to spam]\n\n"
+    help_a += f"🔹 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘: @TheDeadlyBots\n"
     await m.delete() 
-    await m.reply_text(help_a) 
+    await blaze.edit(help_a) 

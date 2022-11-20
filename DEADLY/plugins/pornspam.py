@@ -14,12 +14,14 @@ async def prd(client: Client, message: Message):
     quantity = message.command[1]
     failed = 0 
     quantity = int(quantity)
+    await sex.delete() 
     if int(message.chat.id) in PROGROUPS:
-        await sex.edit("`You Cannot Pornspam In Deadly Chats!`")
+        await message.reply_text("`You Cannot Pornspam In Deadly Chats!`")
         return    
+
     for _ in range(quantity):
         try: 
-            file = random.choice(PORN) 
+            file = random.choice(PORN)             
             await client.send_video(chat_id=message.chat.id, video=file)       
         except FloodWait as e:
             await asyncio.sleep(e.x)

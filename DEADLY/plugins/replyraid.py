@@ -1,3 +1,4 @@
+
 import asyncio
 import random
 import asyncio
@@ -100,5 +101,3 @@ async def check_and_del(app: Client, message):
         await message.reply_text(f"{random.choice(RAID)}")
     except:
         pass
-
-
