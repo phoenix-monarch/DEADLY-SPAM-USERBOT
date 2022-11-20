@@ -44,15 +44,16 @@ async def delayspam(app: Client, m:Message):
         await m.reply_text(usage)
 
 
+# BIG SPAM
 
-@Client.on_message(filters.user(SUDOERS) & filters.command(["spam"], [",", ".", "!", "/", "+", "?"]))
-async def delayspam(app: Client, m:Message):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗦𝗽𝗮𝗺\n\nCommand:\n\n.spam [count] [message to spam] \n\n.spam [count] [reply to a message]\n\nCount must be a integer."     
-    Deadly = "".join(m.text.split(maxsplit=1)[1:]).split(" ", 2)
-    Deadlysexy = Deadly[1:]
-    if len(Deadlysexy) == 2:
-        message = str(Deadlysexy[1])
-        counter = int(Deadlysexy[0])
+@Client.on_message(filters.user(SUDOERS) & filters.command(["bigspam"], [",", ".", "!", "/", "+", "?"]))
+async def bigspam(app: Client, m:Message):
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗴𝗦𝗽𝗮𝗺\n\nCommand:\n\n.bigspam [count] [message to spam]\n\n.bigspam [count] [reply to a message]\n\nCount must be a integer."
+    Deadly = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+    smex = await e.get_reply_message()
+    if len(Deadly) == 2:
+        message = str(Deadly[1])
+        counter = int(Deadly[0])
         if int(m.chat.id) in PROGROUPS:
            await app.reply_text("**Sorry !! cannot spam in deadly chats**")
            return
@@ -60,7 +61,7 @@ async def delayspam(app: Client, m:Message):
            await app.reply_text("**sorry !! I cannot spam on my developer**")
            return
         if int(m.chat.id) in SUDOERS:
-           await app.reply_text("**this guy is bot owner or sudouser**")           
+           await app.reply_text("**this guy is bot owner or sudouser so i cannot act against him**")           
            return
         if m.reply_to_message:
            reply_to_id = m.reply_to_message.message_id
@@ -73,3 +74,5 @@ async def delayspam(app: Client, m:Message):
             await asyncio.sleep(0.8)
     else:
         await m.reply_text(usage)
+
+
