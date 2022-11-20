@@ -14,7 +14,7 @@ from resources.data import RAID, DEV, PROGROUPS
 
 @Client.on_message(filters.user(SUDOERS) & filters.command(["raid"], [",", ".", "!", "/", "+", "?"]))
 async def raid(app: Client, m: Message):  
-      usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n.raid [count] [Username of User]\n\n.raid [count] [reply to a User]\n\nCount must be a integer."
+      usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n.raid [Username of User] [count] \n\n.raid [count] [reply to a User]\n\nCount must be a integer."
       Deadly = "".join(m.text.split(maxsplit=1)[1:]).split(" ", 2)
       if len(Deadly) == 2:
         counts = int(Deadly[0])
@@ -53,3 +53,7 @@ async def raid(app: Client, m: Message):
          blaze = f"{mention} {choice(RAID)}"
          await app.send_message(m.chat.id, blaze)
          await asyncio.sleep(0.3)
+
+
+
+
