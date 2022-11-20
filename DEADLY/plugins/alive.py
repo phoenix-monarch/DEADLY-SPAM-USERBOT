@@ -93,7 +93,7 @@ async def eqw(client: Client, m: Message):
     help_a += f".restart to restart bot\n\n"
     help_a += f"🔸 𝐒𝐏𝐀𝐌 𝐂𝐌𝐃𝐒 🚀\n\n"
     help_a += f".spam [count] [spam_text]\n"
-    help_a += f".sspam [reply_to_sticker] [count]\n\n"
+    help_a += f".delayspam [sleep time] [count] [message to spam]\n\n"
     help_a += f"🔹 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘: @TheDeadlyBots\n"
     await m.delete() 
     await blaze.edit(help_a) 
