@@ -95,4 +95,4 @@ async def eqw(client: Client, m: Message):
     help_a += f".sspam [reply_to_sticker] [count]\n\n"
     help_a += f"𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘: @TheDeadlyBots\n"
     await m.delete() 
-    await m.reply_text(help_a) 
+    await blaze.edit(help_a) 
