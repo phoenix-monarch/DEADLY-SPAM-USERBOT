@@ -69,7 +69,7 @@ async def daid(app: Client, m: Message):
           await m.reply_text("you need to specify an user! Reply to any user or gime id/username")
           return
         try:
-           user = await app.get_chats(Deadly[1])
+           user = await app.get_users(Deadly[1])
         except:
            await m.reply_text("**Error:** User not found or may be deleted!")
            return
