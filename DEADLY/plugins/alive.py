@@ -65,11 +65,11 @@ async def ping(client, m: Message):
     start = time()
     current_time = datetime.utcnow()
     delta_ping = time() - start
-    ping_a = f"𝙋𝙊𝙉𝙂:🏓\n\n"
-    ping_a += f"**Deadly On Fire** 🔥\n\n"  
-    ping_a += f"𝙋𝙊𝙉𝙂:🏓 {delta_ping * 1000:.3f}ᴍs\n"
+    ping_a = "▒█▀▀█ ▀█▀ ▒█▄░▒█ ▒█▀▀█\n▒█▄▄█ ▒█░ ▒█▒█▒█ ▒█░▄▄\n▒█░░░ ▄█▄ ▒█░░▀█ ▒█▄▄█\n\n"  
+    ping_b = f"𝙋𝙊𝙉𝙂:🏓 {delta_ping * 1000:.3f}ᴍs\n"
+    text = f"{ping_a} {ping_b}"
     await m.delete() 
-    await m.reply_text(ping_a) 
+    await m.reply_text(text) 
  
 
 @Client.on_message(filters.user(SUDOERS) & filters.command(["help", "cmds"], [".", "!", "/"]))
