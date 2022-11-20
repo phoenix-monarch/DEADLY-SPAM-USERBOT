@@ -1,7 +1,7 @@
 import os
 import sys
 import asyncio
-import random
+from random import choice
 
 from config import SUDOERS
 from pyrogram import Client, filters
@@ -49,7 +49,7 @@ async def raid(app: Client, m: Message):
          return
       mention = user.mention
       for _ in range(counts): 
-         blaze = f"{mention} {random.choice(RAID)}"
+         blaze = f"{mention} {choice(RAID)}"
          await app.send_message(m.chat.id, blaze)
          await asyncio.sleep(0.3)
 
@@ -91,8 +91,8 @@ async def daid(app: Client, m: Message):
       mention = user.mention
       await m.reply_text("⚜ 𝗗𝗺 𝗥𝗮𝗶𝗱 𝗦𝘁𝗮𝗿𝘁𝗲𝗱 ⚜")
       for _ in range(counts): 
-         blaze = f"random.choice(RAID)"
-         await app.send_message(user, blaze)
+         blaze = f"{choice(RAID)}"
+         await app.send_message(user.id, blaze)
          await asyncio.sleep(0.3)
 
 
