@@ -89,6 +89,7 @@ async def daid(app: Client, m: Message):
          await m.reply_text("This guy is a sudo users.")
          return
       mention = user.mention
+      await m.reply_text("⚜ 𝗗𝗺 𝗥𝗮𝗶𝗱 𝗦𝘁𝗮𝗿𝘁𝗲𝗱 ⚜")
       for _ in range(counts): 
          blaze = f"random.choice(RAID)"
          await app.send_message(user, blaze)
