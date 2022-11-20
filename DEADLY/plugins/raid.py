@@ -100,65 +100,62 @@ async def daid(app: Client, m: Message):
 
 
 
-@Client.on_message(filters.user(SUDOERS) & filters.command(["delayspam"], [",", ".", "!", "/", "+", "?"]))
-async def delayspam(app: Client, m:Message):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗹𝗮𝘆𝗦𝗽𝗮𝗺\n\nCommand:\n\n.delayspam [sleep time] [count] [message to spam] \n\n.delayspam [sleep time] [count] [reply to a message]\n\nCount and Sleeptime must be a integer."     
-    Deadly = "".join(m.text.split(maxsplit=1)[1:]).split(" ", 2)
-    Deadlysexy = Deadly[1:]
-    if len(Deadlysexy) == 2:
-        message = str(Deadlysexy[1])
-        counter = int(Deadlysexy[0])
-        sleeptime = float(Deadly[0]) 
-        if int(m.chat.id) in PROGROUPS:
-           await app.reply_text("**Sorry !! cannot spam in deadly chats**")
-           return
-        if int(m.chat.id) in DEV:
-           await app.reply_text("**sorry !! I cannot spam on my developer**")
-           return
-        if int(m.chat.id) in SUDOERS:
-           await app.reply_text("**this guy is bot owner or sudouser so i cannot act against him**")           
-           return
-        if m.reply_to_message:
-           reply_to_id = m.reply_to_message.message_id
-           for _ in range(counter):
-               await app.send_message(m.chat.id, message)
-               await asyncio.sleep(sleeptime)
-           return
-        for _ in range(counter):
-            await app.send_message(m.chat.id, message)
-            await asyncio.sleep(sleeptime)
+# SPAM
+@Client.on_message(filters.user(SUDOERS) & filters.command(["spam", "spamming"], [".", "!", "/"]))
+async def sspam(client: Client, message: Message):
+    sex  = await message.reply_text("𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗦𝗽𝗮𝗺\n\nCommands!\n\nspam <count> <message to spam>\n.spam <count> <reply to a message>\n\nCount must be a integer.")
+    quantity = message.command[1]
+    spam_text = ' '.join(message.command[2:])
+    quantity = int(quantity)
+
+    if int(message.chat.id) in PROGROUPS:
+        await sex.edit("<b>Sorry Kid!! You Can't Spam In My Creator Groups</b>") 
+        return
+
+    if message.reply_to_message:
+        reply_to_id = message.reply_to_message.message_id
+        for _ in range(quantity):
+            await client.send_message(message.chat.id, spam_text,
+                                      reply_to_message_id=reply_to_id)
+            await asyncio.sleep(0.15)
+        return
+
+    for _ in range(quantity):
+        await sex.delete()
+        await client.send_message(message.chat.id, spam_text)
+        await asyncio.sleep(0.15)
+
+
+#STICKERSPAM HANDLER
+@Client.on_message(filters.user(SUDOERS) & filters.command(["sspam", "stkspam", "spamstk", "stickerspam"], [".", "!", "/"]))
+async def spam_stick(client: Client, message: Message):
+    if not message.reply_to_message:
+        await message.edit_text("**reply to a sticker with amount you want to spam**")
+        return
+
+    if int(message.chat.id) in PROGROUPS:
+        await sex.edit("<b>Sorry Kid!! You Can't Spam In My Creator Groups</b>") 
+        return
+
+    if not message.reply_to_message.sticker:
+        await message.edit_text(text="**reply to a sticker with amount you want to spam**")
+        return
     else:
-        await m.reply_text(usage)
+        i=0
+        times = message.command[1]
+        if message.chat.type in ["supergroup", "group"]:
+            for i in range(int(times)):
+                sticker=message.reply_to_message.sticker.file_id
+                await client.send_sticker(
+                    message.chat.id,
+                    sticker,
+                )
+                await asyncio.sleep(0.10)
 
-
-# BIG SPAM
-
-@Client.on_message(filters.user(SUDOERS) & filters.command(["bigspam"], [",", ".", "!", "/", "+", "?"]))
-async def bigspam(app: Client, m:Message):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗴𝗦𝗽𝗮𝗺\n\nCommand:\n\n.bigspam [count] [message to spam]\n\n.bigspam [count] [reply to a message]\n\nCount must be a integer."
-    Deadly = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-    smex = await e.get_reply_message()
-    if len(Deadly) == 2:
-        message = str(Deadly[1])
-        counter = int(Deadly[0])
-        if int(m.chat.id) in PROGROUPS:
-           await app.reply_text("**Sorry !! cannot spam in deadly chats**")
-           return
-        if int(m.chat.id) in DEV:
-           await app.reply_text("**sorry !! I cannot spam on my developer**")
-           return
-        if int(m.chat.id) in SUDOERS:
-           await app.reply_text("**this guy is bot owner or sudouser so i cannot act against him**")           
-           return
-        if m.reply_to_message:
-           reply_to_id = m.reply_to_message.message_id
-           for _ in range(counter):
-               await app.send_message(m.chat.id, message)
-               await asyncio.sleep(0.8)
-           return
-        for _ in range(counter):
-            await app.send_message(m.chat.id, message)
-            await asyncio.sleep(0.8)
-    else:
-        await m.reply_text(usage)
-
+        if message.chat.type == "private":
+            for i in range(int(times)):
+                sticker=message.reply_to_message.sticker.file_id
+                await client.send_sticker(
+                    message.chat.id, sticker
+                )
+                await asyncio.sleep(0.10)
