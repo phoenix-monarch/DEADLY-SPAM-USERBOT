@@ -53,7 +53,6 @@ async def delayspam(app: Client, m:Message):
     if len(Deadlysexy) == 2:
         message = str(Deadlysexy[1])
         counter = int(Deadlysexy[0])
-        sleeptime = 2
         if int(m.chat.id) in PROGROUPS:
            await app.reply_text("**Sorry !! cannot spam in deadly chats**")
            return
@@ -67,10 +66,10 @@ async def delayspam(app: Client, m:Message):
            reply_to_id = m.reply_to_message.message_id
            for _ in range(counter):
                await app.send_message(m.chat.id, message)
-               await asyncio.sleep(sleeptime)
+               await asyncio.sleep(0.8)
            return
         for _ in range(counter):
             await app.send_message(m.chat.id, message)
-            await asyncio.sleep(sleeptime)
+            await asyncio.sleep(0.8)
     else:
         await m.reply_text(usage)
