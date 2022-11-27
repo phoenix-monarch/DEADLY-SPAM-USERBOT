@@ -23,6 +23,13 @@
 
 <h1 align="center"><img src="./resources/GeezFire.gif" width="35px">𝚃𝙴𝙰𝙼-𝙳𝙴𝙰𝙳𝙻𝚈<img src="./resources/GeezFire.gif" width="35px"></h1>
 
+### STRING SESSION
+
+𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙚 𝙔𝙤𝙪𝙧 𝙎𝙩𝙧𝙞𝙣𝙜 𝙎𝙚𝙨𝙨𝙞𝙤𝙣 𝙐𝙨𝙞𝙣𝙜 𝙏𝙝𝙞𝙨 𝘽𝙤𝙩 𝙤𝙛𝙛𝙞𝙘𝙞𝙖𝙡 𝙗𝙤𝙩 𝙗𝙮 deadly
+
+<a href="https://t.me/PyroStringBot"><img src="https://img.shields.io/badge/PyroStringBot-blue.svg?logo=telegram"></a>
+
+
 ## HOW TO HOST
 
 𝙳𝙴𝙰𝙳𝙻𝚈-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙸𝚂 𝙴𝙰𝚂𝙸𝙻𝚈 𝙳𝙴𝙿𝙻𝙾𝚈𝙰𝙱𝙻𝙴 𝙾𝙽 𝚅𝙿𝚂 𝙰𝙽𝙳 𝙰𝙻𝚂𝙾 𝙾𝙽 𝙷𝙴𝚁𝙾𝙺𝚄, 𝚁𝙰𝙸𝙻𝚆𝙰𝚈𝚂 𝙰𝙽𝙳 𝙶𝙸𝚃𝙷𝚄𝙱
@@ -39,12 +46,6 @@ kaali@lunix~ $ bash start
 ```
 
 For more Variable please see [config.py](https://github.com/Team-Deadly/DEADLY-USERBOT/blob/main/config/config.py) and feel as same provided there
-
-### STRING SESSION
-
-𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙚 𝙔𝙤𝙪𝙧 𝙎𝙩𝙧𝙞𝙣𝙜 𝙎𝙚𝙨𝙨𝙞𝙤𝙣 𝙐𝙨𝙞𝙣𝙜 𝙏𝙝𝙞𝙨 𝘽𝙤𝙩 𝙤𝙛𝙛𝙞𝙘𝙞𝙖𝙡 𝙗𝙤𝙩 𝙗𝙮 deadly
-
-<a href="https://t.me/PyroStringBot"><img src="https://img.shields.io/badge/PyroStringBot-blue.svg?logo=telegram"></a>
 
 
 ## ᴅᴇᴘʟᴏʏ ᴛᴏ ʜᴇʀᴏᴋᴜ 🚀
